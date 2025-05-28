@@ -1,0 +1,65 @@
+<style>
+.markdown-rendered ul{
+    margin-block-start: -10px;
+}
+
+.list-collapse-indicator {
+    display: none;
+}
+
+ul li::marker {
+    display: none;
+    content: "";
+}
+
+ul li {
+    padding-left: 0.5em;
+}
+
+ul li::before {
+    content: "•";
+    color: currentColor;
+    width: 1em;
+    padding-left: 0em;
+    padding-right: 0.5em;
+}
+
+li p {
+    display: inline;
+    margin: 0;
+}
+
+.collapse-tree-button {
+    background: none;
+    border: none;
+}
+
+:root {
+    --graph-node: #f0f0f0 !important;
+}
+
+</style>
+
+<script defer type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCFAEIMuJhNFyiLK7DJlmP5JAowHz8UIiI",
+    authDomain: "rdb-web-3768c.firebaseapp.com",
+    projectId: "rdb-web-3768c",
+    storageBucket: "rdb-web-3768c.firebasestorage.app",
+    messagingSenderId: "269901950258",
+    appId: "1:269901950258:web:c326305195e3f84267fb2b",
+    measurementId: "G-7BXPW67EFK"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
