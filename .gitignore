@@ -67,3 +67,14 @@ node_modules/
 
 # dataconnect generated files
 .dataconnect
+
+# built html files
+/public/assets
+/public/lib
+/public/computer-science
+/public/further-maths
+/public/maths
+/public/physics
+index.html
+
+content/.obsidian/plugins/

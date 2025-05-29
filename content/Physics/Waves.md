@@ -3,8 +3,8 @@
 - **Amplitude** is the maximum displacement of a point on the wave from its undisturbed (equilibrium) position.
 - **Frequency** is the number of complete waves passing a given point per second (in $\text{Hz}$).
 - **Time period** is the time taken for a complete wave cycle to pass through a point. This is the reciprocal of frequency.
-- **Phase** is the phase of a wave refers to the stage of the wave cycle. Two waves are in phase when they have 0 rad phase difference. They are in antiphase when they have $\pi$ rad phase difference.
-- **Coherence** is toherent waves have the same frequency and constant phase difference.
+- **Phase** of a wave refers to the stage of the wave cycle. Two waves are in phase when they have $0\,\text{rad}$ phase difference. They are in antiphase when they have $\pi\,\text{rad}$ phase difference.
+- **Coherence** is where coherent waves have the same frequency and constant phase difference.
 - **Path difference** is the difference between the distance travelled by two waves when they meet. A path difference of $n\lambda$ produces waves meeting in phase, while a path difference of $(n + \frac{1}{2})\lambda$ produces waves meeting in antiphase.
 
 ## Standing waves
