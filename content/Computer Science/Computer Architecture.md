@@ -1,12 +1,12 @@
 ## Software
 Software refers to programs: the instructions that the computer executes to perform tasks. Embedded systems contain limited instruction sets and only perform specific tasks, while general-purpose computer can run a range of tasks.
-#### System Software
+#### System software
 System software controls the hardware of a computer system. This includes:
 - **Operating systems**, which manages hardware resources such as processor time and memory, provides a platform for application software to run on, and a way for application software to interact with hardware through APIs
 - **Program translators** (compilers, interpreters, assemblers) convert source code into machine code
 - **Library programs**, which are collections of resources used to develop software, including pre-written code and subroutines
 - **Utility programs** that perform maintenance and housekeeping tasks (disk defragmentation, antivirus, compression)
-#### Application Software
+#### Application software
 Application software is designed to perform user-facing tasks. This includes web browsers, word processors, video editors, etc. Application software can be categorised into general purpose (used for a variety of tasks), special purpose (only used for one specific task), or bespoke (developed for the client's specific requirements).
 
 
@@ -23,7 +23,7 @@ The processor executes the instructions that allow the computer to perform tasks
 - The **ALU** (arithmetic logic unit), which performs arithmetic operations (addition, multiplication) and logical operations (AND, NOT)
 - Registers, which are very small but fast to access places of memory in the processor. There are general-purpose and dedicated registers.
 - Cache, which stores frequently accessed data and instructions
-##### Registers
+###### Registers
 Dedicated registers include:
 - The **program counter** (PC), which contains the address of the next instruction to be executed.
 - The **current instruction register** (CIR), which contains the current instruction being executed.
@@ -34,7 +34,7 @@ Dedicated registers include:
 	- The carry flag, set if the last operation created a carry
 	- The sign or negative flag, set depending on the sign of the result of the last operation
 	- The overflow flag, set if integer overflow occurred. 
-##### Fetch-execute cycle
+###### Fetch-execute cycle
 **Fetch**
 1. The address of the next instruction is copied from the PC to the MAR, and sent through the address bus to the main memory.
 2. The next instruction is retrieved from main memory and sent along the data bus to the MBR. The PC is incremented so it contains the address of the next instruction.
@@ -44,7 +44,7 @@ Dedicated registers include:
 **Execute**
 5. The instruction is executed, using the ALU if needed.
 
-##### Factors affecting processor performance
+###### Factors affecting processor performance
 **Number of cores**
 In a traditional computer, instructions are fetched and executed one at a time. Modern computers have processors with multiple cores, which can theoretically independently execute instructions simultaneously, each running their own fetch-execute cycle. However, software needs to be written such that it can use multiple processor cores.
 

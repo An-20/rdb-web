@@ -85,4 +85,4 @@ The **highest common factor** of $b$ and $c$ can be found by finding the **small
 [^1]: **Footnote on solving linear congruences**
 	Once you have one solution $x_1$ the rest is fairly simple - the whole $\frac{n}{d} \times r$ thing just means adding multiples of $\frac{n}{d}$ to get the other solutions. Try it out a few times, and take a look at the exercises on Integral.
 [^2]: **Footnote on finding highest common factor using $bx+cy$**
-	No proof provided, but its kinda obvious? $bx+cy$ has to have a factor of $\hcf(a,b)$, so the smallest (nonnegative, integer) value of $bx+cy$ is going to be $\hcf(a,b)$ itself.
+	No proof provided, but its kinda obvious? $bx+cy$ has to have a factor of $\hcf(b,c)$, so the smallest (nonnegative, integer) value of $bx+cy$ is going to be $\hcf(b,c)$ itself.

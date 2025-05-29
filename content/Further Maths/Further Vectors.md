@@ -1,5 +1,5 @@
 ## Vector product
-The vector (cross) product of two vectors is given by:
+The **vector (cross) product** of two vectors is given by:
 $$
 \boldsymbol{a} \times \boldsymbol{b} = |\boldsymbol{a}|\,|\boldsymbol{b}|\,\sin \theta\,\,\hat{n}
 $$
