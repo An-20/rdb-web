@@ -1,6 +1,6 @@
 ## Definitions
 ###### Binary operation
-A binary operation is a process that involves two members of a set and produces a result. For example, the operation $\star$ could be defined as $a \star b = a^2 + b^2$.
+A **binary operation** is a process that involves two members of a set and produces a result. For example, the operation $\star$ could be defined as $a \star b = a^2 + b^2$.
 - A binary operation $\star$ is **closed** over set $S$ if $\forall a, b \in S$, $a \star b \in S$.
 - A binary operation $\star$ is **commutative** over set $S$ if $\forall a, b \in S$, $a \star b  = b \star a$.
 - A binary operation $\star$ is **associative** over set $S$ if $\forall a, b, c \in S$, $a \star (b \star c) = (a \star b) \star c$.

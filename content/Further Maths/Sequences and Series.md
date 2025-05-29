@@ -1,4 +1,4 @@
-## Sequences and Series
+## Sequences and series
 A **sequence** is a list of terms, while a **series** is the sum of the terms. A sequence can be defined in two ways:
 - A recurrence relation, e.g. $u_{n+2} = u_{n+1} + u_{n}$ (for the Fibonacci numbers)
 - A position-to-term formula, e.g. $u_{n} = 3n + 4$ (for an arithmetic sequence). A sequence with a position-to-term formula can be denoted as $\{u_{n}\}$, e.g. $\{3n+4\} = 7, 10, 13, 16, 19$.

@@ -57,7 +57,7 @@ A visualisation of sections through $z = x^2-y^2$:
 \newcommand{\labelledpoint}[2]{\node[circle, fill=black,inner sep=2pt,label=45:\color{black}$#2$]at (#1){};}
 
 \begin{document}
-\begin{tikzpicture}[scale=0.8, background rectangle/.style={fill=white, rounded corners=.55cm}, show background rectangle]
+\begin{tikzpicture}[scale=0.8]
 
   \begin{scope}[shift={(0,0)}]
 	  \draw[->] (-3, 0) -- (3, 0) node[right] {$y$};
@@ -98,7 +98,7 @@ A visualisation of contours of $z=4x^2+y^2=c$, with $c=1,4,9,16$:
            set layers=my layer set,
     }
 \begin{document}
-\begin{tikzpicture}[scale=0.8, background rectangle/.style={fill=white, rounded corners=.55cm}, show background rectangle]
+\begin{tikzpicture}[scale=0.8]
 
   \begin{scope}[shift={(0,-12)}]
         \begin{axis}[
@@ -154,18 +154,18 @@ The **partial derivatives** of $\text{f}$ are denoted as:
 - $\text{f}_{y}= \frac{\partial \text{f}}{\partial y}$: differentiate $\text{f}$ with respect to $y$, treating $x$ as constant.
 
 **Higher-order** partial derivatives are denoted as:
-- $\text{f}_{xx} = \frac{\partial}{\partial x} \left(\frac{\partial \text{f}}{\partial x}\right) = \frac{\partial^2 \text{f}}{\partial x^2}$
-- $\text{f}_{yy} = \frac{\partial}{\partial y} \left(\frac{\partial \text{f}}{\partial y}\right) = \frac{\partial^2 \text{f}}{\partial y^2}$
-- $\text{f}_{xy} = \frac{\partial}{\partial x} \left(\frac{\partial \text{f}}{\partial y}\right) = \frac{\partial^2 \text{f}}{\partial x \partial y}$[^1]
-- $\text{f}_{yx} = \frac{\partial}{\partial y} \left(\frac{\partial \text{f}}{\partial x}\right) = \frac{\partial^2 \text{f}}{\partial y \partial x}$[^1]
+- $\text{f}_{xx} = \frac{\partial}{\partial x} \left(\frac{\partial \text{f}}{\partial x}\right) = \frac{\partial^2 \text{f}}{\partial x^2}$: partially differentiate $\text{f}$ with respect to $x$ twice
+- $\text{f}_{yy} = \frac{\partial}{\partial y} \left(\frac{\partial \text{f}}{\partial y}\right) = \frac{\partial^2 \text{f}}{\partial y^2}$: partially differentiate $\text{f}$ with respect to $y$ twice
+- $\text{f}_{xy} = \frac{\partial}{\partial x} \left(\frac{\partial \text{f}}{\partial y}\right) = \frac{\partial^2 \text{f}}{\partial x \partial y}$: partially differentiate $\text{f}$ with respect to $y$, then $x$[^1]
+- $\text{f}_{yx} = \frac{\partial}{\partial y} \left(\frac{\partial \text{f}}{\partial x}\right) = \frac{\partial^2 \text{f}}{\partial y \partial x}$: partially differentiate $\text{f}$ with respect to $x$, then $y$[^1]
 
 The **mixed derivative theorem** states that for most well-behaved continuous functions:
 $$
 \text{f}_{xy} = \text{f}_{yx} \implies \frac{\partial^2\text{f}}{\partial x \partial y} = \frac{\partial^2 \text{f}}{\partial y \partial x}
 $$
 ###### Stationary points
-When $\text{f}_{x}= 0$ and $\text{f}_{y} = 0$ there is a stationary point. These can be minima, maxima, or saddle points (classification of stationary points is A-level content).
+When $\text{f}_{x}= 0$ and $\text{f}_{y} = 0$ there is a stationary point. A stationary point can be a minimum, maximum, or a saddle point (classification of stationary points is A-level content).
 
 
-[^1] **Footnote on order of mixed derivatives**
-	This is the order that the textbook insists is correct, whilst the rest of the Internet disagrees. Practically, it doesn't matter as on this course, all functions will likely satisfy the mixed derivative theorem. This may be corrected soon pending further investigation (I am severely sleep deprived)
+[^1]: **Footnote on order of mixed derivatives**
+	This is the order that the textbook insists is correct, whilst the rest of the Internet disagrees. Practically, it doesn't matter as on this course, all functions will likely satisfy the mixed derivative theorem. This may be corrected soon pending further investigation (I am severely sleep deprived).

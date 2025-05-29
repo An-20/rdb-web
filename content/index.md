@@ -3,14 +3,15 @@ Welcome to RDB-Web, a work-in-progress putting [VKSL](https://vksl.uk) RDB on th
 
 Looking for [VKSL](https://vksl.uk)?
 See anything wrong? [Fix it.](https://github.com/An-20/rdb-web/issues/new)
-## Computer Science
+#### Computer Science
 [[Computer Architecture]]
-## Further Maths - Additional Pure
+#### Further Maths - Additional Pure
 [[Sequences and Series]]
+[[Number Theory]]
 [[Groups]]
 [[Further Vectors]]
 [[Surfaces and Partial Differentiation]]
-## Physics
+#### Physics
 [[Forces and Motion]]
 [[Waves]]
 [[Materials]]
