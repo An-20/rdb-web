@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "Further Maths/Number Theory.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Number Theory"
             }
           }
         ]
@@ -171,11 +171,13 @@
   },
   "active": "1e0667d89cb01dcc",
   "lastOpenFiles": [
+    "index.md",
     "Physics/Materials.md",
     "Physics/Waves.md",
     "Physics/Forces and Motion.md",
     "Physics/Sensing.md",
     "Physics/Quantum.md",
+    "Physics/Imaging and Signalling.md",
     "Further Maths/Groups.md",
     "Further Maths/Surfaces and Partial Differentiation.md",
     "Further Maths/Sequences and Series.md",
@@ -183,8 +185,9 @@
     "Further Maths/Number Theory.md",
     "Computer Science/Algorithms.md",
     "Computer Science/Data Representation.md",
-    "index.md",
+    "Computer Science/Theory of Computation.md",
     "Computer Science/Computer Architecture.md",
+    "Pasted image 20250529222536.png",
     "Computer Science",
     "Physics",
     "assets/logo.png",
