@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "5069bcef014d182b",
+        "id": "9dd7e850b72f2a3d",
         "type": "tabs",
         "children": [
           {
-            "id": "1e0667d89cb01dcc",
+            "id": "b80997c6ddfc95dd",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Further Maths/Number Theory.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Number Theory"
+              "title": "New tab"
             }
           }
         ]
@@ -78,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 265
   },
   "right": {
     "id": "8372f5363dec9a02",
@@ -169,24 +165,27 @@
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "1e0667d89cb01dcc",
+  "active": "b80997c6ddfc95dd",
   "lastOpenFiles": [
     "index.md",
-    "Physics/Materials.md",
     "Physics/Waves.md",
-    "Physics/Forces and Motion.md",
     "Physics/Sensing.md",
     "Physics/Quantum.md",
+    "Physics/Materials.md",
     "Physics/Imaging and Signalling.md",
-    "Further Maths/Groups.md",
+    "Physics/Forces and Motion.md",
+    "Further Maths/Work, Energy, and Power.md",
     "Further Maths/Surfaces and Partial Differentiation.md",
     "Further Maths/Sequences and Series.md",
-    "Further Maths/Further Vectors.md",
     "Further Maths/Number Theory.md",
-    "Computer Science/Algorithms.md",
+    "Further Maths/Momentum, Impulse, and Circular Motion.md",
+    "Further Maths/Groups.md",
+    "Further Maths/Further Vectors.md",
+    "Further Maths/Dimensional Analysis.md",
     "Computer Science/Data Representation.md",
-    "Computer Science/Theory of Computation.md",
+    "Computer Science/Algorithms.md",
     "Computer Science/Computer Architecture.md",
+    "Computer Science/Theory of Computation.md",
     "Pasted image 20250529222536.png",
     "Computer Science",
     "Physics",

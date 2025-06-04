@@ -166,6 +166,5 @@ $$
 ###### Stationary points
 When $\text{f}_{x}= 0$ and $\text{f}_{y} = 0$ there is a stationary point. A stationary point can be a minimum, maximum, or a saddle point (classification of stationary points is A-level content).
 
-
 [^1]: **Footnote on order of mixed derivatives**
-	This is the order that the textbook insists is correct, whilst the rest of the Internet disagrees. Practically, it doesn't matter as on this course, all functions will likely satisfy the mixed derivative theorem. This may be corrected soon pending further investigation (I am severely sleep deprived).
+	This is the order that the textbook insists is correct, whilst the rest of the Internet disagrees. Practically, it doesn't matter as on this course, all functions will likely satisfy the mixed derivative theorem. This may be corrected soon pending further investigation (The author is severely sleep deprived).

@@ -137,11 +137,11 @@ D_6:\,\,\,
     t & t & r & p & q & e & s
 \end{array}
 $$
-The symmetric group $S_{3}$ can be thought of as the group of all possible ways to rearrange three objects. $S_{3}$ is the same as $D_{3}$, which can be thought of as the symmetries of an equailateral triangle ($0\degree,120\degree,240\degree$rotations and reflections across the three medians).
+The symmetric group $S_{3}$ can be thought of as the group of all possible ways to rearrange three objects. $S_{3}$ is the same as $D_{3}$, which can be thought of as the symmetries of an equilateral triangle ($0\degree,120\degree,240\degree$rotations and reflections across the three medians).
 
 Notes on $S_{3}$:
 - It is the smallest non-Abelian group, so the Cayley table is not symmetric about the diagonal.
-- In the above Cayley table, $e$ is the identity transformation $p,q,r$ can be thought of as reflections across the medians of an equilaterial triangle, and $s$ and $t$ can be thought of as $120\degree$ and $240\degree$ rotations.
+- In the above Cayley table, $e$ is the identity transformation $p,q,r$ can be thought of as reflections across the medians of an equilateral triangle, and $s$ and $t$ can be thought of as $120\degree$ and $240\degree$ rotations.
 - Note how $p,q,r$ are all self-inverse (as expected for reflections) and how $s$ and $t$ are inverses of each other (as expected for $120\degree$ and $240\degree$ rotations).
  
 #### Order 7
