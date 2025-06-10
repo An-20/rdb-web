@@ -8,6 +8,8 @@ Looking for [VKSL](https://vksl.uk)? See anything wrong? [Fix it.](https://githu
 #### Computer Science
 [[Algorithms]]
 [[Computer Architecture]]
+[[Data Structures]]
+[[Networks]]
 [[Data Representation]]
 #### Further Maths - Additional Pure
 [[Sequences and Series]]

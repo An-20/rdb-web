@@ -11,10 +11,10 @@
             "id": "b80997c6ddfc95dd",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -167,6 +167,9 @@
   },
   "active": "b80997c6ddfc95dd",
   "lastOpenFiles": [
+    "Computer Science/Data Structures.md",
+    "Computer Science/Networks.md",
+    "Computer Science/Algorithms.md",
     "index.md",
     "Physics/Waves.md",
     "Physics/Sensing.md",
@@ -183,7 +186,6 @@
     "Further Maths/Further Vectors.md",
     "Further Maths/Dimensional Analysis.md",
     "Computer Science/Data Representation.md",
-    "Computer Science/Algorithms.md",
     "Computer Science/Computer Architecture.md",
     "Computer Science/Theory of Computation.md",
     "Pasted image 20250529222536.png",
