@@ -11,6 +11,14 @@ Looking for [VKSL](https://vksl.uk)? See anything wrong? [Fix it.](https://githu
 [[Data Structures]]
 [[Networks]]
 [[Data Representation]]
+#### Further Maths - Pure 1
+[[Matrices]]
+[[Vectors]]
+[[Applications of Matrices]]
+[[Complex Numbers]]
+[[Roots of Polynomials]]
+#### Further Maths - Pure 2
+[[Planes]]
 #### Further Maths - Additional Pure
 [[Sequences and Series]]
 [[Number Theory]]
@@ -28,3 +36,5 @@ Looking for [VKSL](https://vksl.uk)? See anything wrong? [Fix it.](https://githu
 [[Materials]]
 [[Quantum]]
 [[Sensing]]
+[[Out into Space]]
+[[Radioactive Decay and Capacitor Discharge]]

@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9dd7e850b72f2a3d",
+        "id": "9f8c016835b5824c",
         "type": "tabs",
         "children": [
           {
-            "id": "b80997c6ddfc95dd",
+            "id": "34d42aa212e6643b",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Further Maths/Pure 1/Vectors.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Vectors"
             }
           }
         ]
@@ -156,6 +160,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -165,37 +170,47 @@
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "b80997c6ddfc95dd",
+  "active": "34d42aa212e6643b",
   "lastOpenFiles": [
-    "Computer Science/Data Structures.md",
-    "Computer Science/Networks.md",
-    "Computer Science/Algorithms.md",
+    "Further Maths/Pure 1/Roots of Polynomials.md",
+    "Further Maths/Pure 1/Matrices.md",
+    "Further Maths/Pure 1/Complex Numbers.md",
+    "Further Maths/Pure 1/Applications of Matrices.md",
     "index.md",
     "Physics/Waves.md",
     "Physics/Sensing.md",
+    "Physics/Radioactive Decay and Capacitor Discharge.md",
     "Physics/Quantum.md",
+    "Physics/Out into Space.md",
     "Physics/Materials.md",
     "Physics/Imaging and Signalling.md",
     "Physics/Forces and Motion.md",
-    "Further Maths/Work, Energy, and Power.md",
-    "Further Maths/Surfaces and Partial Differentiation.md",
-    "Further Maths/Sequences and Series.md",
-    "Further Maths/Number Theory.md",
-    "Further Maths/Momentum, Impulse, and Circular Motion.md",
-    "Further Maths/Groups.md",
-    "Further Maths/Further Vectors.md",
-    "Further Maths/Dimensional Analysis.md",
+    "Further Maths/Pure 2/Planes.md",
+    "Further Maths/Pure 1/Vectors.md",
+    "Further Maths/Mechanics/Work, Energy, and Power.md",
+    "Further Maths/Mechanics/Momentum, Impulse, and Circular Motion.md",
+    "Further Maths/Mechanics/Dimensional Analysis.md",
+    "Further Maths/Additional Pure/Surfaces and Partial Differentiation.md",
+    "Further Maths/Additional Pure/Sequences and Series.md",
+    "Further Maths/Additional Pure/Number Theory.md",
+    "Further Maths/Additional Pure/Groups.md",
+    "Further Maths/Additional Pure/Further Vectors.md",
+    "Computer Science/Data Structures.md",
     "Computer Science/Data Representation.md",
-    "Computer Science/Computer Architecture.md",
-    "Computer Science/Theory of Computation.md",
-    "Pasted image 20250529222536.png",
-    "Computer Science",
-    "Physics",
-    "assets/logo.png",
-    "assets/head.html",
+    "Computer Science/Algorithms.md",
+    "Further Maths/Additional Pure",
+    "Further Maths/Mechanics",
+    "Further Maths/Pure 2",
+    "Further Maths/Pure 1",
     "assets/logo.svg",
-    "logo.svg",
+    "assets/logo.png",
+    "Physics",
+    "Further Maths",
+    "Computer Science",
+    "assets/head.html",
     "assets",
-    "Further Maths"
+    "further-maths/work,-energy,-and-power.html",
+    "Pasted image 20250529222536.png",
+    "logo.svg"
   ]
 }
