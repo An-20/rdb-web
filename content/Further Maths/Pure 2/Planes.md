@@ -61,7 +61,7 @@ $$
 This formula is given (don't even bother asking where it comes from).
 
 **Distance between two skew lines**
-Consider two points $M$ and $N$ along two skew lines. The distance $MN$ is minimised when the line segment $MN$ is perpendicular to both lines^[^1].
+Consider two points $M$ and $N$ along two skew lines. The distance $MN$ is minimised when the line segment $MN$ is perpendicular to both lines [^1].
 
 The shortest distance between two skew lines with equations $\boldsymbol{r} = \boldsymbol{a} + \lambda\boldsymbol{d}_1$ and $\boldsymbol{r} = \boldsymbol{b} + \mu\boldsymbol{d}_2$ is:
 $$
@@ -94,6 +94,5 @@ For **simultaneous linear equations in three variables**, there are five possibl
 
 Two planes are parallel if their normal vectors are parallel (are multiples of each other).
 
-**Footnotes**
-[^1]: **Footnote on skew lines**
-	It is not apparent that such a line segment necessarily exists, but it does for all pairs of skew lines.
+[^1]: **Footnote on skew lines and perpendicularity**
+It is not apparent that such a line segment necessarily exists, but it does for all pairs of skew lines.

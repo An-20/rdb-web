@@ -18,7 +18,10 @@ Looking for [VKSL](https://vksl.uk)? See anything wrong? [Fix it.](https://githu
 [[Complex Numbers]]
 [[Roots of Polynomials]]
 #### Further Maths - Pure 2
+[[Series and Induction]]
+[[Further Complex Numbers]]
 [[Planes]]
+[[Hyperbolic Functions]]
 #### Further Maths - Additional Pure
 [[Sequences and Series]]
 [[Number Theory]]
@@ -38,3 +41,4 @@ Looking for [VKSL](https://vksl.uk)? See anything wrong? [Fix it.](https://githu
 [[Sensing]]
 [[Out into Space]]
 [[Radioactive Decay and Capacitor Discharge]]
+[[Simple Models of Matter and Boltzmann Factor]]
