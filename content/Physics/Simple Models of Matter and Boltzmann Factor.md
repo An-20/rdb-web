@@ -215,5 +215,10 @@ For many physical processes, a certain amount of energy is needed for the proces
 
 Many physical processes require energies between $15kT$ and $30kT$, for example water evaporation requires around $18kT$ at freezing.
 
+The Boltzmann factor, $f$ is defined as:
+$$
+f = e^{-\frac{E}{kT}} = \exp\left(-\frac{E}{kT}\right)
+$$
+
 [^1]: **Footnote on kinetic energies in perpendicular directions**
 	Kinetic energies in perpendicular directions add (by the Pythagorean theorem), so on average a third of the total kinetic energy is in any given direction.

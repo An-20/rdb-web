@@ -7,6 +7,7 @@ Welcome to RDB Web, a work-in-progress putting [VKSL](https://vksl.uk) RDB on th
 Looking for [VKSL](https://vksl.uk)? See anything wrong? [Fix it.](https://github.com/An-20/rdb-web/issues/new)
 #### Computer Science
 [[Algorithms]]
+[[Theory of Computation]]
 [[Computer Architecture]]
 [[Data Structures]]
 [[Networks]]
