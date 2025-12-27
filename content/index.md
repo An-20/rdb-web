@@ -23,6 +23,8 @@ Looking for [VKSL](https://vksl.uk)? See anything wrong? [Fix it.](https://githu
 [[Further Complex Numbers]]
 [[Planes]]
 [[Hyperbolic Functions]]
+[[Further Calculus]]
+[[Further Calculus Applications]]
 #### Further Maths - Additional Pure
 [[Sequences and Series]]
 [[Number Theory]]
@@ -33,13 +35,14 @@ Looking for [VKSL](https://vksl.uk)? See anything wrong? [Fix it.](https://githu
 [[Dimensional Analysis]]
 [[Momentum, Impulse, and Circular Motion]]
 [[Work, Energy, and Power]]
-#### Physics
+#### Physics - Year 1
 [[Forces and Motion]]
 [[Imaging and Signalling]]
 [[Waves]]
 [[Materials]]
 [[Quantum]]
 [[Sensing]]
+#### Physics - Year 2
 [[Out into Space]]
 [[Radioactive Decay and Capacitor Discharge]]
 [[Simple Models of Matter and Boltzmann Factor]]
