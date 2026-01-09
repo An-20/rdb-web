@@ -25,6 +25,7 @@ Looking for [VKSL](https://vksl.uk)? See anything wrong? [Fix it.](https://githu
 [[Hyperbolic Functions]]
 [[Further Calculus]]
 [[Further Calculus Applications]]
+[[Polar Coordinates]]
 #### Further Maths - Additional Pure
 [[Sequences and Series]]
 [[Number Theory]]
@@ -43,7 +44,9 @@ Looking for [VKSL](https://vksl.uk)? See anything wrong? [Fix it.](https://githu
 [[Quantum]]
 [[Sensing]]
 #### Physics - Year 2
+[[Electromagnetism]]
 [[Out into Space]]
 [[Radioactive Decay and Capacitor Discharge]]
 [[Simple Models of Matter and Boltzmann Factor]]
 [[Charge and Field]]
+[[Probing and Ionising]]

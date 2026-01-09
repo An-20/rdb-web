@@ -16,7 +16,7 @@ When doing arithmetic with complex numbers, $i$ can be treated as a constant. Th
 Examples:
 - Addition: $a + bi + c + di = a + c + (b + d)i$
 - Subtraction: $(a + bi) - (c + di) = a - c + (b - d)i$
-- Multiplication: $(a + bi)(c + di) = ac + adi + bci + bdi^2 = ac + bd + (ad + bc)i$
+- Multiplication: $(a + bi)(c + di) = ac + adi + bci + bdi^2 = ac - bd + (ad + bc)i$
 - Division by a constant: $\frac{a + bi}{k} = \frac{a}{k} + \frac{b}{k}i$
 
 #### Complex Roots

@@ -82,7 +82,7 @@ For a uniform gravitational field $g$, the change in gravitational potential ene
 ###### Equipotentials
 **Equipotentials** are regions in which field lines are parallel, meaning there is a constant gravitational potential. These are found in a uniform field. Equipotential lines have the same gravitational potential along their length, and run perpendicular to field lines.
 
-Gravitational potential energy does not change when moving along equipotential lines lines, because by $E = Fs$, no work is done when the force is perpendicular to the displacement, resulting in no work being done whilst moving along equipotential lines.
+Gravitational potential energy does not change when moving along equipotential lines lines, because by $E = Fs$, **no work is done when the force is perpendicular to the displacement**, resulting in **no work being done whilst moving along equipotential lines**.
 
 #### Footnotes
 [^1]: **Footnote on signs of forces and potential energies**
