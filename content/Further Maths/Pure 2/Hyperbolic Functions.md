@@ -1,5 +1,5 @@
 #### Definitions
-The **hyperbolic functions** are defined as follows:
+The **hyperbolic functions** are defined as:
 $$
 \begin{split}
 \sinh x &= \frac{e^x - e^{-x}}{2} \\
@@ -53,14 +53,14 @@ The graphs of hyperbolic functions are below:
 From these graphs, the domain and range of the hyperbolic functions can be found:
 - $\sinh x$ has a domain of $x \in \mathbb{R}$, range of $\sinh x \in \mathbb{R}$.
 - $\cosh x$ has a domain of $x \in \mathbb{R}$, range of $\cosh x \ge 1$.
-- $\tanh x$ has a domain of $x \in \mathbb{R}$, range of $-1 \le \tanh x \le 1$.
+- $\tanh x$ has a domain of $x \in \mathbb{R}$, range of $-1 \lt \tanh x \lt 1$.
 
 #### Inverse hyperbolic functions
 The **inverse hyperbolic functions** are $\DeclareMathOperator{arsinh}{arsinh}\arsinh x$, $\DeclareMathOperator{arcosh}{arcosh}\arcosh x$, and $\DeclareMathOperator{artanh}{artanh}\artanh x$.
 The domains and ranges can be found:
 - $\DeclareMathOperator{arsinh}{arsinh}\arsinh x$ has a domain of $x \in \mathbb{R}$, range of $\DeclareMathOperator{arsinh}{arsinh}\arsinh x \in \mathbb{R}$.
 - $\DeclareMathOperator{arcosh}{arcosh}\arcosh x$ has a domain of $x \ge 1$, range of $\DeclareMathOperator{arcosh}{arcosh}\arcosh x \ge 0$.
-- $\DeclareMathOperator{artanh}{artanh}\artanh x$ has a domain of $-1 \le x \le 1$, range of $\DeclareMathOperator{artanh}{artanh}\artanh x \in \mathbb{R}$.
+- $\DeclareMathOperator{artanh}{artanh}\artanh x$ has a domain of $-1 \lt x \lt 1$, range of $\DeclareMathOperator{artanh}{artanh}\artanh x \in \mathbb{R}$.
 
 The inverse hyperbolic functions have logarithmic forms that can be proved by using the exponential definition of the hyperbolic functions and solving the hidden quadratic. These are:
 - $\DeclareMathOperator{arsinh}{arsinh}\arsinh x = \ln(x + \sqrt{x^2+1})$
@@ -69,7 +69,7 @@ The inverse hyperbolic functions have logarithmic forms that can be proved by us
 These are given in the formula book.
 
 #### Hyperbolic identities
-The most important hyperbolic identity is:
+The most important **hyperbolic identity** is:
 $$
 \cosh^2 x - \sinh^2 x = 1
 $$

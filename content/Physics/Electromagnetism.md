@@ -19,9 +19,9 @@ $$
 This is known as **Faraday's Law of electromagnetic induction**. The **negative sign** is a result of **Lenz's Law**, which states that the induced e.m.f. in a circuit as a result of a changing magnetic field creates a current with a direction that creates a magnetic field that opposes the original change in the magnetic field.
 
 #### Electromagnetic circuits
-In a **magnetic circuit**, the flux lines form a closed loop. Similar to conductance in electrical circuits, magnetic circuits have **permeance**; higher permeance means more flux. Thus, magnetic circuits are often made from ferromagnetic materials with a **high magnetic permeability**, for example iron. The magnetic equivalent of p.d. is **current-turns**^[^1] $NI$ (equal to the current in a coil multiplied by the number of turns), while the magnetic equivalent of electric current is flux $\Phi$. As in a electrical circuit, higher current-turns will cause a higher flux.
+In a **magnetic circuit**, the flux lines form a closed loop. Similar to conductance in electrical circuits, magnetic circuits have **permeance**; higher permeance means more flux. Thus, magnetic circuits are often made from ferromagnetic materials with a **high magnetic permeability**, for example iron. The magnetic equivalent of p.d. is **current-turns** $NI$ (equal to the current in a coil multiplied by the number of turns), while the magnetic equivalent of electric current is flux $\Phi$. As in a electrical circuit, higher current-turns will cause a higher flux.
 
-For a electric circuit, the conductance is $G = \frac{\sigma A}{l}$, where $\sigma$ is the conductivity. SImilarly, for magnetic circuit, the **permeance is maximised** by **maximizing surface area** and **minimising the length of flux lines**. An electric circuit has a large current when there is a high conductance, so a magnetic circuit has a large flux when there is a high permeance. Iron has a magnetic permeability 200,000 times that of air, so flux lines don't 'leak out' of iron cores. If there is a gap in the magnetic circuit, the permeance will be greatly reduced because of air's low permeability.
+For a electric circuit, the conductance is $G = \frac{\sigma A}{l}$, where $\sigma$ is the conductivity. Similarly, for magnetic circuit, the **permeance is maximised** by **maximizing surface area** and **minimising the length of flux lines**. An electric circuit has a large current when there is a high conductance, so a magnetic circuit has a large flux when there is a high permeance. Iron has a magnetic permeability 200,000 times that of air, so flux lines don't 'leak out' of iron cores. If there is a gap in the magnetic circuit, the permeance will be greatly reduced because of air's low permeability.
 
 ###### Transformers
 **Transformers** are electromagnetic machines that change the potential difference of electrical power. In a transformer, an alternating p.d. in the primary coil creates a changing flux in the core. This changing flux links with the secondary coil to induce a alternating p.d. in the secondary.
@@ -86,6 +86,3 @@ Where:
 A **motor** uses an electric current to produce a magnetic field that interacts with a permanent magnetic field to cause a force and motion. A motor contains a coil that produces an upwards force on one side, and a downwards force on the other side, causing a net torque and thus rotation.
 
 Motors and generators are the same thing. If you use a generator to deliver current to a load, there will be resistance from the generator acting as a motor. When a motor spins, it generates a **back-e.m.f** that opposes motion by Lenz's Law, limiting the speed of the motor.
-
-**Footnotes**
-[^1]: Yes, this is actually in the spec.
