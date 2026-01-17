@@ -15,12 +15,13 @@ Looking for [VKSL](https://vksl.uk)? See anything wrong? [Fix it.](https://githu
 #### Further Maths - Pure 1
 [[Matrices]]
 [[Vectors]]
-[[Applications of Matrices]]
+[[Matrices Applications]]
 [[Complex Numbers]]
 [[Roots of Polynomials]]
 #### Further Maths - Pure 2
 [[Series and Induction]]
 [[Further Complex Numbers]]
+[[Further Complex Numbers and Trigonometry]]
 [[Planes]]
 [[Hyperbolic Functions]]
 [[Further Calculus]]

@@ -1,6 +1,6 @@
 ## Definitions
 ###### Binary operation
-A **binary operation** is a process that involves two members of a set and produces a result. For example, the operation $\star$ could be defined as $a \star b = a^2 + b^2$.
+A binary operation is a process that involves two members of a set and produces a result. For example, the operation $\star$ could be defined as $a \star b = a^2 + b^2$.
 - A binary operation $\star$ is **closed** over set $S$ if $\forall a, b \in S$, $a \star b \in S$.
 - A binary operation $\star$ is **commutative** over set $S$ if $\forall a, b \in S$, $a \star b  = b \star a$.
 - A binary operation $\star$ is **associative** over set $S$ if $\forall a, b, c \in S$, $a \star (b \star c) = (a \star b) \star c$.
@@ -22,6 +22,8 @@ An **Abelian group** is a group where the binary operation $\star$ is also commu
 The **order of a group** is the number of elements in the group.
 The **order of an element** is the power an element must be raised to in order to get the identity element. The order of an element $a$ is $n$ such that $a^n = e$, where $e$ is the identity. The order of $e$ is 1.
 
+Two groups are **isomorphic** if they have the same structure, such that there is a one-to-one correspondence between the elements of the two groups.
+
 #### Cyclic groups
 A **cyclic** group is where each element of the group $G$ can be expressed as $a^n$, where $a$ is a **generator** of the group and $n\in\mathbb{Z}$. A cyclic group can have multiple generators; any element with order equal to the order of the group is a generator.
 
@@ -40,9 +42,9 @@ Any subgroup must contain the identity element. The identity element and any sel
 - The order of each element of $G$ is a factor of the order of $G$ (because each element can generate a cyclic subgroup $H$ such that the order of $H$ is equal to the order of the element, which must therefore be a factor of the order of $G$).
 - If $G$ has a prime order, then $G$ has no proper subgroups[^3].
 
-## Groups to know
+#### Groups to know
 The specification requires knowledge of all groups with order $\le 7$. This includes cyclic groups, $K_{4}$ (the Klein 4-group), and $S_{3}$ (the symmetric group of order 3). The cyclic groups $Z_{n}$ can be thought of as the set of integers $\{0,1,2,\dots,n-1\}$ under the operation of addition modulo $n$.
-#### Order 1
+###### Order 1
 There is one trivial Abelian cyclic group of order 1, $Z_1$:
 $$
 \begin{array}{l|l}
@@ -51,7 +53,7 @@ $$
     e & e
 \end{array}
 $$
-#### Order 2
+###### Order 2
 There is one Abelian cyclic group of order 2, $Z_2$:
 $$
 \begin{array}{l|ll}
@@ -61,7 +63,7 @@ $$
     a & a & e
 \end{array}
 $$
-#### Order 3
+###### Order 3
 There is one Abelian cyclic group of order 3, $Z_3$:
 $$
 \begin{array}{l|ll}
@@ -72,7 +74,7 @@ $$
     b & b & e & a
 \end{array}
 $$
-#### Order 4
+###### Order 4
 There are two groups of order 4: the Abelian cyclic group $Z_4$ and the Abelian Klein 4-group $K_4$.
 $$
 Z_4:\,\,\,
@@ -97,7 +99,7 @@ K_4:\,\,\,
 \end{array}
 $$
 Where in $K_{4}$, each element is self-inverse. $K_{4}$ can also be thought of as the symmetries of a rectangle, where $a,b,c$ are a $180\degree$ rotation, or reflections in either axis (thus the elements are self-inverse).
-#### Order 5
+###### Order 5
 There is one Abelian cyclic group of order 5, $Z_5$.
 $$
 \begin{array}{l|lllll}
@@ -110,7 +112,7 @@ $$
     d & d & e & a & b & c
 \end{array}
 $$
-#### Order 6
+###### Order 6
 There are two groups of order 6: the Abelian cyclic group $Z_6$ and the symmetric group $S_3$ (or the dihedral group $D_3$)[^4].
 $$
 Z_6:\,\,\,
@@ -141,10 +143,10 @@ The symmetric group $S_{3}$ can be thought of as the group of all possible ways 
 
 Notes on $S_{3}$:
 - It is the smallest non-Abelian group, so the Cayley table is not symmetric about the diagonal.
-- In the above Cayley table, $e$ is the identity transformation $p,q,r$ can be thought of as reflections across the medians of an equilateral triangle, and $s$ and $t$ can be thought of as $120\degree$ and $240\degree$ rotations.
+- In the above Cayley table, $e$ is the identity transformation $p,q,r$ can be thought of as reflections across the medians of an equilaterial triangle, and $s$ and $t$ can be thought of as $120\degree$ and $240\degree$ rotations.
 - Note how $p,q,r$ are all self-inverse (as expected for reflections) and how $s$ and $t$ are inverses of each other (as expected for $120\degree$ and $240\degree$ rotations).
  
-#### Order 7
+###### Order 7
 There is one Abelian cyclic group of order 7, $Z_7$:
 $$
 \begin{array}{l|llllll}
@@ -159,7 +161,7 @@ $$
     u & u & e & p & q & r & s & t\\
 \end{array}
 $$
-
+**Footnotes**
 [^1]: **Footnote on Latin Squares**
 	The Cayley table of any group is a Latin square, but not all Latin squares represent a group. A Latin square represents a quasigroup, where there is a closed operation and an inverse element for all elements, but there is not necessarily associativity or an identity.
 

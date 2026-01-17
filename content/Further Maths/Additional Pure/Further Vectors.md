@@ -1,9 +1,9 @@
-## Vector product
+## Vector Product
 The **vector (cross) product** of two vectors is given by:
 $$
 \boldsymbol{a} \times \boldsymbol{b} = |\boldsymbol{a}|\,|\boldsymbol{b}|\,\sin \theta\,\,\hat{n}
 $$
-Where $\theta$ is the angle between $\boldsymbol{a}$ and $\boldsymbol{b}$, and $\hat{n}$ is a unit vector perpendicular to $\boldsymbol{a}$ and $\boldsymbol{b}$. The direction of $\hat{n}$ is found using the right hand rule, by aligning the first (index) finger with $\boldsymbol{a}$ and the second (middle) finger with $\boldsymbol{b}$, the thumb points in the direction of $\hat{n}$.
+Where $\theta$ is the angle between $\boldsymbol{a}$ and $\boldsymbol{b}$, and $\hat{n}$ is a unit vector perpendicular to $\boldsymbol{a}$ and $\boldsymbol{b}$. The direction of $\hat{n}$ is found using the **right hand rule**, by aligning the first (index) finger with $\boldsymbol{a}$ and the second (middle) finger with $\boldsymbol{b}$, the thumb points in the direction of $\hat{n}$.
 ```tikz
 \usepackage{tikz}
 \usetikzlibrary{decorations, decorations.text, decorations.markings, backgrounds}
@@ -20,7 +20,7 @@ Where $\theta$ is the angle between $\boldsymbol{a}$ and $\boldsymbol{b}$, and $
 ```
 From Pure 1, there is also the definition of the cross product in the formula booklet:
 $$
-\boldsymbol{a} \times \boldsymbol{b} = \left|\begin{smallmatrix}\boldsymbol{i} & a_1 & b_1 \\ \boldsymbol{j} & a_2 & b_2 \\ \boldsymbol{k} & a_3 & b_3\end{smallmatrix}\right| = \left(\begin{smallmatrix}a_2b_3 - a_3b_2 \\ a_3b_1 - a_1b_3 \\ a_1b_2 - a_2b_1\end{smallmatrix}\right)
+\boldsymbol{a} \times \boldsymbol{b} = \left|\begin{matrix}\boldsymbol{i} & a_1 & b_1 \\ \boldsymbol{j} & a_2 & b_2 \\ \boldsymbol{k} & a_3 & b_3\end{matrix}\right| = \begin{pmatrix}a_2b_3 - a_3b_2 \\ a_3b_1 - a_1b_3 \\ a_1b_2 - a_2b_1\end{pmatrix}
 $$
 #### Properties
 - $|\boldsymbol{a} \times \boldsymbol{b}| = |\boldsymbol{a}|\,|\boldsymbol{b}|\,\sin\theta$.
@@ -110,6 +110,25 @@ $$
 \text{Area of } OACB = |\boldsymbol{a}|\,|\boldsymbol{b}|\,\sin \theta\, = |\boldsymbol{a} \times \boldsymbol{b}|
 $$
 
+## Scalar triple product
+The **scalar triple product** of three vectors is given by:
+$$
+(\boldsymbol{a} \times \boldsymbol{b}) \cdot \boldsymbol{c} 
+= (\boldsymbol{b} \times \boldsymbol{c}) \cdot \boldsymbol{a} 
+= (\boldsymbol{c} \times \boldsymbol{a}) \cdot \boldsymbol{b}
+$$
+Note how swapping the order of the vectors in a circular order does not affect the scalar triple product. However, swapping any two vectors, e.g. $(\boldsymbol{b} \times \boldsymbol{a}) \cdot \boldsymbol{c}$ would give negate the value (by the anticommutativity of the cross product). The scalar triple product can also be defined by the determinant of a matrix:
+$$
+(\boldsymbol{a} \times \boldsymbol{b}) \cdot \boldsymbol{c} = \boldsymbol{c} \cdot (\boldsymbol{a} \times \boldsymbol{b}) = \left|\begin{matrix} c_1 & a_1 & b_1 \\ c_2 & a_2 & b_2 \\ c_3 & a_3 & b_3\end{matrix}\right|
+$$
 
-​[^1]: **Anticommutativity of the vector product**
+#### Applications
+- The volume of a **parallelepiped** with sides $\boldsymbol{a}$, $\boldsymbol{b}$. and $\boldsymbol{c}$ is given by the magnitude of the scalar triple product: $|(\boldsymbol{a} \times \boldsymbol{b}) \cdot \boldsymbol{c} |$.
+- The volume of a **tetrahedra** with sides $\boldsymbol{a}$, $\boldsymbol{b}$. and $\boldsymbol{c}$ is given by one-sixth of the magnitude of the scalar triple product : $\frac{1}{6}|(\boldsymbol{a} \times \boldsymbol{b}) \cdot \boldsymbol{c} |$.
+
+> *we also ran out of budget for tikz diagrams here :(*
+> *no seriously do you know how hard 3d is*
+
+**Footnotes**
+​[^1]: **Footnote on anticommutativity of the vector product**
 	The vector product is anticommutative, that is an operation $\star$ where $a \star b$ is the inverse to $b \star a$ (in this case the inverse is negating the value).

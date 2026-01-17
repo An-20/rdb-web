@@ -56,6 +56,8 @@ A point at which there is a large increase in the extension when the stress incr
 The maximum stress experienced by a sample before breaking.
 ##### Breaking point
 The point at which the material breaks (at the fracture stress).
+###### Area under graph
+The area under a stress-strain graph is the toughness (energy absorbed per unit volume).
 
 ## Material structure
 ###### Crystalline
