@@ -129,6 +129,7 @@ $$
 > *we also ran out of budget for tikz diagrams here :(*
 > *no seriously do you know how hard 3d is*
 
-**Footnotes**
-​[^1]: **Footnote on anticommutativity of the vector product**
+
+[^1]: **Footnote on anticommutativity of the vector product**
 	The vector product is anticommutative, that is an operation $\star$ where $a \star b$ is the inverse to $b \star a$ (in this case the inverse is negating the value).
+	

@@ -181,6 +181,6 @@ $$
 z = \text{f}(a, b) + (x - a)\text{f}_x(a, b) + (y - b)\text{f}_y(a, b) 
 $$
 
-**Footnotes**
-[^1] **Footnote on order of mixed derivatives**
+
+[^1]: **Footnote on order of mixed derivatives**
 	This is the order that the textbook insists is correct, whilst the rest of the Internet disagrees. Practically, it doesn't matter as on this course, all functions will likely satisfy the mixed derivative theorem. This may be corrected soon pending further investigation (the author is severely sleep deprived).

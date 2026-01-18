@@ -55,7 +55,27 @@ To **find a solution** $x_1$:
 - Get the coefficient on $x$ to be 1.
 
 ###### Simultaneous linear congruences
-**Simultaneous linear congruences** are under construction!
+**Simultaneous linear congruences** are a system of multiple linear congruences. They can be solved by rewriting the congruence in $x = na + b$ form, then substituting and solving as usual.
+
+For **two simultaneous linear congruences** to have a solution:
+- Each congruence individually must be solvable
+- If $x \equiv a \pmod n$ and $x \equiv b \pmod m$ then there exists a solution only if $\hcf(m,n) | (b - a)$.
+  **Proof**
+  - $x = k_1n+a$, $x = k_2m + b$
+  - Equating gives $k_1n + a = k_2m + b$
+  - Rearranging gives $(a - b) = k_1 n - k_2 m$.
+  - The RHS has a factor of $\hcf(m,n)$, so the LHS must as well.
+
+For **three simultaneous linear congruences** to have a solution:
+- If all three moduli are coprime then there will be a unique solution.
+- If each pair of linear congruences has a solution then there will be a solution.
+
+###### Quadratic residues
+A **quadratic residue** mod $n$ is a $q$ such that there is a solution to:
+$$
+x^2 \equiv q \pmod n
+$$
+If the congruence has no solutions, then $q$ is a quadratic non-residue. All the quadratic residues mod $n$ can be found using a table. Such a table has symmetry in the values.
 
 #### Prime numbers
 ###### Fundamental theorem of arithmetic
@@ -83,8 +103,42 @@ These two results give us:
 - Two integers $b$ and $b$ are **coprime if and only if** there are two integers $x$ and $y$ such that $bx + cy = 1$.
 - The **highest common factor** of $b$ and $c$ can be found by finding the **smallest possible integer** written as $bx + cy$[^2].
 
-**Footnotes**
+###### Fermat's Little Theorem
+**Fermat's Little Theorem** states that for prime $p$, for any integer $a$, $a^p - a$ is a multiple of $p$:
+$$
+a^p \equiv a \pmod p \quad \text{for prime }p
+$$
+Alternatively, Fermat's Little Theorem also states that for prime $p$ and $a,\,p$ coprime:
+$$
+a^{p-1} \equiv 1 \pmod p \quad \text{for prime }p,\,\hcf(a,p) = 1
+$$
+It does not follow that if this result is true that $p$ is necessarily prime. If $x$ is a composite number and this result is true, then $x$ is a pseudo-prime.
+
+###### Order of $a$ modulo $p$
+The **order of $a$ modulo** $p$ is the smallest integer $n$ such that $a^n \equiv 1 \pmod p$. This only exists if $\hcf(a, p) \equiv 1$ and $a \neq 1$. Fermat's little theorem states that $p-1$ would satisfy this congruence, but $p-1$ is not necessarily the least value of $n$. Also, $n | (p-1)$[^3].
+
+###### The binomial theorem
+The **modular binomial theorem** states that:
+$$
+(a + b)^p = a^p + b^p \pmod p \quad \text{for prime }p
+$$
+**Proof**
+Consider the binomial expansion:
+$$
+(a + b)^p = a^p + {p\choose 1}a^{p-1}b + \dots + {p\choose {p-1}}ab^{p-1} + b^p
+$$
+Consider the binomial coefficient ${p\choose k}$ for all values of $k$ other than $0$ and $p$:
+$$
+{p\choose k} = \frac{p!}{(p-k)!k!}
+$$
+This coefficient will have a factor of $p$ from the numerator (provided $k \neq 0$ and $k \neq p$). Thus, all the 'middle' terms of the expansion will be congruent to 0 mod $p$, giving the desired result.
+
+
 [^1]: **Footnote on solving linear congruences**
 	Once you have one solution $x_1$ the rest is fairly simple - the whole $\frac{n}{d} \times r$ thing just means adding multiples of $\frac{n}{d}$ to get the other solutions. Try it out a few times, and take a look at the exercises on Integral.
 [^2]: **Footnote on finding highest common factor using $bx+cy$**
 	No proof provided, but its kinda obvious? $bx+cy$ has to have a factor of $\hcf(a,b)$, so the smallest (nonnegative, integer) value of $bx+cy$ is going to be $\hcf(a,b)$ itself.
+[^3]: **Footnote on $n$, the order of $a$ modulo $p$ dividing $p - 1$.**
+	This result actually isn't trivial?
+	$a^n \equiv 1 \pmod p$ so $a^{nq} \equiv 1 \pmod p$ for some integer $q$.
+	By Fermat's Little Theorem, $a^{p-1} \equiv 1$ so $nq = p-1$. (this actually isn't fully sound but whatever)

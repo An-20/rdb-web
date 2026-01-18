@@ -161,15 +161,12 @@ $$
     u & u & e & p & q & r & s & t\\
 \end{array}
 $$
-**Footnotes**
+
 [^1]: **Footnote on Latin Squares**
 	The Cayley table of any group is a Latin square, but not all Latin squares represent a group. A Latin square represents a quasigroup, where there is a closed operation and an inverse element for all elements, but there is not necessarily associativity or an identity.
-
 [^2]: **Footnote on Lagrange's Theorem**
 	This is A-level content, but it's useful at AS so it's here anyways.
-
 [^3]: **Footnote on proper subgroups and the trivial subgroup**
 	A group $G$ of prime order will still have the trivial subgroup. Whether the trivial subgroup is a proper subgroup is... debateable (the textbook says no, but Integral says yes).
-
 [^4]: **Footnote on $S_{3}$ / $D_{3}$ / $D_{6}$**
 	The Internet can't agree on whether this group is $D_{3}$ or $D_{6}$, so maybe just call it $S_{3}$ (OCR use $S_{3}$).

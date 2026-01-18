@@ -22,7 +22,7 @@ A **homogenous** recurrence relation has the form $u_{n+1} = ku_n$, for some con
 A recurrence system is defined by the recurrence relation (e.g. $u_{n+1} = 3u_n + 2$) and the **initial conditions**, e.g. $u_1 = 1$. Our goal is typically to find a **closed-form solution** to the system: a position-to-term rule that only depends on $n$. For the previous example, $u_n = 2\times3^{n-1} - 1$ (you can verify this for $n=1,2,3$).
 
 #### Solving recurrence relations
-Solving recurrence relations takes a similar method to the method for [[10 - Differential Equations#Second-order differential equations with constant coefficients|differential equations with constant coefficients]]. For a relation of form $u_{n+1} = au_n + f(n)$ or $u_{n+2} = au_{n+1} + bu_n + f(n)$, the solution will take the form:
+Solving recurrence relations takes a similar method to the method for [[Differential Equations#Second-order differential equations with constant coefficients|second-order differential equations with constant coefficients]]. For a relation of form $u_{n+1} = au_n + f(n)$ or $u_{n+2} = au_{n+1} + bu_n + f(n)$, the solution will take the form:
 $$
 c(n) + p(n)
 $$
@@ -56,7 +56,7 @@ We then find the **particular solution** $p(n)$, which is related to the non-hom
 
 Then, apply the initial conditions to find remaining constants from the complementary function.
 
-**Footnotes**
+
 [^1]: **Footnote on convergence (outside of specification)**
 	There are sequences where the terms converge to 0 that do not sum to a convergent series. For example, the harmonic sequence $1, \frac{1}{2}, \frac{1}{3},\frac{1}{4},\dots$ is convergent because the terms tend to 0. However, the harmonic series $1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \dots$ is not convergent.
 
