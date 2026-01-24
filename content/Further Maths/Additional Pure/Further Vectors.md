@@ -11,10 +11,10 @@ Where $\theta$ is the angle between $\boldsymbol{a}$ and $\boldsymbol{b}$, and $
 
 \begin{document}
 \begin{tikzpicture}[thick, background rectangle/.style={fill=white, rounded corners=.55cm}, show background rectangle]
-	\draw[ultra thick,-latex](0,0)--(3,0)node[midway,below]{$a$};
-	\draw[ultra thick,-latex](0,0)--(1,1)node[midway,above]{$b$};
-	\draw[ultra thick,-latex](0,0)--(0,3)node[pos=0.7,left]{$a\times b$};
-	\draw[ultra thick,-latex](0,0)--(0,1)node[pos=0.7,left]{$\hat{n}$};
+	\draw[ultra thick,-latex](0,0)--(-1.2,1)node[midway,right]{$a$};
+	\draw[ultra thick,-latex](0,0)--(-3,0)node[midway,above]{$b$};
+	\draw[ultra thick,-latex](0,0)--(0,3)node[pos=0.7,right]{$a\times b$};
+	\draw[ultra thick,-latex](0,0)--(0,1)node[pos=0.7,right]{$\hat{n}$};
 \end{tikzpicture}
 \end{document}
 ```
@@ -124,7 +124,8 @@ $$
 
 #### Applications
 - The volume of a **parallelepiped** with sides $\boldsymbol{a}$, $\boldsymbol{b}$. and $\boldsymbol{c}$ is given by the magnitude of the scalar triple product: $|(\boldsymbol{a} \times \boldsymbol{b}) \cdot \boldsymbol{c} |$.
-- The volume of a **tetrahedra** with sides $\boldsymbol{a}$, $\boldsymbol{b}$. and $\boldsymbol{c}$ is given by one-sixth of the magnitude of the scalar triple product : $\frac{1}{6}|(\boldsymbol{a} \times \boldsymbol{b}) \cdot \boldsymbol{c} |$.
+- The volume of a **tetrahedron** with sides $\boldsymbol{a}$, $\boldsymbol{b}$. and $\boldsymbol{c}$ is given by one-sixth of the magnitude of the scalar triple product : $\frac{1}{6}|(\boldsymbol{a} \times \boldsymbol{b}) \cdot \boldsymbol{c} |$.
+- If the scalar triple product is zero, then the three vectors $\boldsymbol{a}$, $\boldsymbol{b}$. and $\boldsymbol{c}$ are coplanar, as they form a tetrahedron with zero volume (so they lie along a plane).
 
 > *we also ran out of budget for tikz diagrams here :(*
 > *no seriously do you know how hard 3d is*
@@ -132,4 +133,3 @@ $$
 
 [^1]: **Footnote on anticommutativity of the vector product**
 	The vector product is anticommutative, that is an operation $\star$ where $a \star b$ is the inverse to $b \star a$ (in this case the inverse is negating the value).
-	

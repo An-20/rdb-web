@@ -1,4 +1,4 @@
-A **differential equation** describes the relationship between an indepdendent variable (on the bottom of the derivative), and a dependent variable (on the top of the derivative) and its derivatives. Differential equations can be categorized by:
+A **differential equation** describes the relationship between an independent variable (on the bottom of the derivative), and a dependent variable (on the top of the derivative) and its derivatives. Differential equations can be categorized by:
 - The **order** of a differential equation is the highest order derivative of the dependent variable.
 - A **linear differential equation** is where the dependent variable appears to a maximum power of 1. Any differential equation with other functions of the dependent variable, $y$ e.g. $y^2$, $\sin y$, is not linear.
 - A **homogenous differential equation** is where every term involves the dependent variable. All **non-homogeneous differential equations** have an associated homogeneous differential equation by removing terms that don't involve the dependent variable.
