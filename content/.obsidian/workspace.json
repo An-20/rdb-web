@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9f8c016835b5824c",
+        "id": "581f6d41fb65e13f",
         "type": "tabs",
         "children": [
           {
-            "id": "34d42aa212e6643b",
+            "id": "a25936f2aaadd73d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Further Maths/Pure 1/Vectors.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Vectors"
+              "title": "index"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 265
+    "width": 398
   },
   "right": {
     "id": "8372f5363dec9a02",
@@ -170,34 +170,34 @@
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "34d42aa212e6643b",
+  "active": "a25936f2aaadd73d",
   "lastOpenFiles": [
-    "Further Maths/Pure 1/Roots of Polynomials.md",
-    "Further Maths/Pure 1/Matrices.md",
-    "Further Maths/Pure 1/Complex Numbers.md",
-    "Further Maths/Pure 1/Applications of Matrices.md",
+    "Further Maths/Pure 2/Differential Equations.md",
     "index.md",
     "Physics/Waves.md",
+    "Physics/Simple Models of Matter and Boltzmann Factor.md",
     "Physics/Sensing.md",
     "Physics/Radioactive Decay and Capacitor Discharge.md",
     "Physics/Quantum.md",
+    "Physics/Probing and Ionising.md",
     "Physics/Out into Space.md",
     "Physics/Materials.md",
     "Physics/Imaging and Signalling.md",
     "Physics/Forces and Motion.md",
+    "Physics/Electromagnetism.md",
+    "Physics/Charge and Field.md",
+    "Further Maths/Pure 2/Series and Induction.md",
+    "Further Maths/Pure 2/Polar Coordinates.md",
     "Further Maths/Pure 2/Planes.md",
+    "Further Maths/Pure 2/Hyperbolic Functions.md",
+    "Further Maths/Pure 2/Further Complex Numbers and Trigonometry.md",
+    "Further Maths/Pure 2/Further Complex Numbers.md",
+    "Further Maths/Pure 2/Further Calculus Applications.md",
+    "Further Maths/Pure 2/Further Calculus.md",
+    "Further Maths/Pure 2/Differential Equations Applications.md",
     "Further Maths/Pure 1/Vectors.md",
-    "Further Maths/Mechanics/Work, Energy, and Power.md",
-    "Further Maths/Mechanics/Momentum, Impulse, and Circular Motion.md",
-    "Further Maths/Mechanics/Dimensional Analysis.md",
-    "Further Maths/Additional Pure/Surfaces and Partial Differentiation.md",
-    "Further Maths/Additional Pure/Sequences and Series.md",
-    "Further Maths/Additional Pure/Number Theory.md",
-    "Further Maths/Additional Pure/Groups.md",
-    "Further Maths/Additional Pure/Further Vectors.md",
-    "Computer Science/Data Structures.md",
-    "Computer Science/Data Representation.md",
-    "Computer Science/Algorithms.md",
+    "Further Maths/Pure 1/Roots of Polynomials.md",
+    "Further Maths/Pure 1/Matrices Applications.md",
     "Further Maths/Additional Pure",
     "Further Maths/Mechanics",
     "Further Maths/Pure 2",
