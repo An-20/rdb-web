@@ -309,13 +309,13 @@ $$
 This is given in the formula booklet. An application is the cross product of the base vectors, e.g. $\boldsymbol{i} \times \boldsymbol{j} = \boldsymbol{k}$.
 
 #### Determinant definition of the cross product
-Alternatively, the cross product can be worked out using the [[1 - Matrices#Determinant of a 3x3 Matrix|determinant of a 3x3 matrix]]:
+Alternatively, the cross product can be worked out using the [[Matrices#Determinant of a 3x3 Matrix|determinant of a 3x3 matrix]]:
 $$
 \boldsymbol{a} \times \boldsymbol{b} = \left|\begin{smallmatrix}\boldsymbol{i} & a_1 & b_1 \\ \boldsymbol{j} & a_2 & b_2 \\ \boldsymbol{k} & a_3 & b_3\end{smallmatrix}\right|
 $$
 
 #### Application to 3x3 matrix inverse
-The cross product can be used to find the [[1 - Matrices#Inverse of a 3x3 Matrix|inverse of a 3x3 matrix]], by finding the cross products of columns of $\boldsymbol{A}$:
+The cross product can be used to find the [[Matrices#Inverse of a 3x3 Matrix|inverse of a 3x3 matrix]], by finding the cross products of columns of $\boldsymbol{A}$:
 - Find the first row of $\boldsymbol{A}^{-1}$ by $\boldsymbol{c}_2 \times \boldsymbol{c}_3$
 - Find the second row of $\boldsymbol{A}^{-1}$ by $\boldsymbol{c}_3 \times \boldsymbol{c}_1$ (note how this is the other way round)
 - Find the third row of $\boldsymbol{A}^{-1}$ by $\boldsymbol{c}_1 \times \boldsymbol{c}_2$

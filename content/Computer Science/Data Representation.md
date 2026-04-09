@@ -102,7 +102,7 @@ Lossless compression works by recording patterns in data rather than the actual 
 #### Caesar Cipher
 The **Caesar Cipher** is a substitution cipher where each letter of the alphabet is shifted by a given number of letters (the key). The Caesar Cipher is insecure as there are only 25 possible keys, making it easy to brute-force. Additionally, each character always maps to a specific output character, making cryptoanalysis techniques such as frequency analysis possible.
 #### Vernam Cipher
-The **Vernam Cipher** requires a one-time pad equal in or longer than the message being sent. The **one-time pad** must be **truly random** and only ever used once. Each plaintext character is XORed with the one-time pad character. The random key means the distribution of characters is also random, making the Vernam Cipher immune to cryptoanalysis.
+The **Vernam Cipher** requires a one-time pad (key) equal in or longer than the message being sent. The **one-time pad** is a key that must be **truly random** and only ever used once. Each plaintext character is XORed with the one-time pad character. The random key means the distribution of characters is also random, making the Vernam Cipher immune to cryptoanalysis.
 
 While the Vernam Cipher is theoretically unbreakable, Other ciphers are **computationally secure**. In theory, with enough ciphertext and time, every other cryptographic algorithm can be broken.
 

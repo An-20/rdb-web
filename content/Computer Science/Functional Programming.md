@@ -1,16 +1,18 @@
-A **function** is a rule that, for each element in some set A of inputs, assigns an output chosen from set B, but without necessarily using every member of B. The **domain** is a set from which the function’s input values are chosen. The **co-domain** is a set from which the function’s output values are chosen.
+#### Overview
+A **function** is a rule that, for each element in some set A of inputs, assigns an output chosen from set B, but without necessarily using every member of B. The **domain** is a set from which the function’s input values are chosen. The **co-domain** is a set from which the function’s output values are chosen. The domain and co-domain are subsets of objects in some data type.
 
-A **higher-order** function takes a function as an argument or returns a function as a result, or does both.
-
-A function `f` has a function type `f: A -> B`, where `A -> B` denotes the type of a function that takes an argument type `A` and outputs a result type `B`.
+In functional languages, a function is a **first-class object**. This means that it can be an argument to another function as well as the result of a function call.
 
 First-class objects are objects which can:
 - appear in expressions
 - be assigned to a variable
 - be assigned as arguments
-- be returned in function calls.
+- be returned in function calls
+In many programming languages, integers, floating-point values, characters, and strings are first-class objects.
 
-In functional languages, a function is a first-class object. This means that it can be an argument to another function as well as the result of a function call.
+A **higher-order** function takes a function as an argument or returns a function as a result, or does both.
+
+A function `f` has a function type `f: A -> B`, where `A -> B` denotes the type of a function that takes an argument type `A` and outputs a result type `B`.
 
 Partial function application is where some arguments of a multi-argument function are fixed, giving a new function with less arguments. For example, consider the function `add` that takes two integers and adds them. This gives `add: Integer -> (Integer -> Integer)`. Partial function application means that `add 4` is a new function that when applied to an integer, returns that integer plus 4.
 

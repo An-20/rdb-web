@@ -9,7 +9,7 @@ When describing an **ideal gas**, the following assumptions are made:
 - Gravitational, electrostatic and Van de Waals forces can be ignored
 - The motion of all molecules is random
 - All molecules travel in straight lines
-*The top three assumptions in bold are given explicitly in the specification.*
+*IS: The top three assumptions in bold are mentioned explicitly in the specification.*
 
 **Boyle's Law** states that for a constant temperature, the volume of a fixed mass of gas is inversely proportional to its pressure:
 $$
@@ -89,14 +89,43 @@ $$
 Particles in a liquid or gas undergo **random motion** because fast free-moving molecules move around and collide with each other. The **mean free path** is the average distance a particle travels before colliding (the size of a 'step'). If a particles takes $N$ steps, on average its end point is $\sqrt{N}$ steps away from its starting point. 
 
 #### Boltzmann Factor
-For many physical processes, a certain amount of energy is needed for the process to take place. This is the **activation energy** E; for example, in chemistry, reagents are often heated so they have enough kinetic energy to react. Other physical processes requiring an activation energy are:
+For many physical processes, a certain amount of energy is needed for the process to take place. This is the **activation energy** E; for example, in chemistry, reagents are often heated so they have enough kinetic energy to react. 
+
+Other physical processes requiring an activation energy are:
 - Changes of state
 - Thermionic emission, where electrons are emitted from a heated metal surface
 - Ionisation, where electrons are removed from an atom
-	- Conduction in semiconductors
+- Conduction in semiconductors
 - Viscous flow
 - Nuclear fusion
-*The first five of these processes are given explicitly in the specification.*
+*IS: The first five of these processes are mentioned explicitly in the specification.*
+
+The **Boltzmann factor**, $f$, is defined as:
+$$
+f = e^{-\frac{E}{kT}} = \exp\left(-\frac{E}{kT}\right)
+$$
+The graph below shows how the value of $f$ varies as $T$ increases, asymptotically approaching $f = 1$.
+```tikz
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}[scale=1]
+
+  \begin{scope}[shift={(0,0)}]
+	\draw[->] (-0.5,0) -- (6,0) node[right] {$T$};
+	\draw[->] (0,-0.5) -- (0,3) node[above] {$f$};
+	\draw[dashed] (0, 2.5) -- (6.0,2.5);
+	\draw[thick,smooth,samples=100,domain=0.01:5.7]
+	    plot(\x,{2.5 * 2.71^(-1 * (\x)^(-1))});
+	\node at (0, 0) [circle,fill,inner sep=1pt]{};
+	\node[align=left] at (2.8, -0.4) {Value of $f$ for varying values of $T$};
+	\node[align=left] at (-0.5, 2.5) {$f = 1$};
+  \end{scope}
+\end{tikzpicture}
+\end{document}
+```
+
+
+Many physical processes require energies between $15kT$ and $30kT$, for example water evaporation requires around $18kT$ at freezing. The graph below shows varying energy regimes for physical and chemical changes.
 
 ```tikz
 \usepackage{tikz}
@@ -211,14 +240,7 @@ For many physical processes, a certain amount of energy is needed for the proces
 \end{tikzpicture}
 \end{document}
 ```
->**Hope you like this diagram because we used up our entire yearly Tikz diagram budget on it.**
 
-Many physical processes require energies between $15kT$ and $30kT$, for example water evaporation requires around $18kT$ at freezing.
-
-The Boltzmann factor, $f$ is defined as:
-$$
-f = e^{-\frac{E}{kT}} = \exp\left(-\frac{E}{kT}\right)
-$$
 
 [^1]: **Footnote on kinetic energies in perpendicular directions**
 	Kinetic energies in perpendicular directions add (by the Pythagorean theorem), so on average a third of the total kinetic energy is in any given direction.

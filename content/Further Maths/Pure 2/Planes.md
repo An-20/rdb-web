@@ -3,7 +3,7 @@ A **plane** is a flat surface in three-dimensional space that extends indefinite
 $$
 \boldsymbol{r} = \boldsymbol{a} + \lambda\boldsymbol{d}_1 + \mu\boldsymbol{d}_2
 $$
-Conceptually, this is very similar to the [[2 - Vectors#Vector Equation of a Line|vector equation of a line]], first going to the plane, then travelling along it parallel to the two direction vectors.
+Conceptually, this is very similar to the [[Vectors#Vector Equation of a Line|vector equation of a line]], first going to the plane, then travelling along it parallel to the two direction vectors.
 
 A plane is uniquely defined by **three non-colinear points**. Alternatively, a plane can also be defined by 
 - a line and a point not on the line

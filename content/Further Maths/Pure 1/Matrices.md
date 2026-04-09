@@ -120,7 +120,7 @@ Where $\boldsymbol{C}$ is the **matrix of cofactors**, found by:
 - Finding the determinant of the remaining $2 \times 2$ matrix.
 - Determining the sign according to the alternating sign matrix $\left(\begin{smallmatrix} + & - & + \\ - & + & - \\ + & - & +\end{smallmatrix}\right)$.
 
-Another method to find the inverse of a $3 \times 3$ matrix is described [[2 - Vectors#Application to 3x3 matrix inverse|in Further Vectors]].
+Another method to find the inverse of a $3 \times 3$ matrix is described [[Vectors#Application to 3x3 matrix inverse|in Further Vectors]].
 
 [^1]:**Footnote on inverse of a product of matrices**
 	The reason $(\boldsymbol{ABC})^{-1} = \boldsymbol{C}^{-1}\boldsymbol{B}^{-1}\boldsymbol{A}^{-1}$ is because matrix multiplication can be understood as [function composition](https://www.3blue1brown.com/lessons/matrix-multiplication#:~:text=two%20successive%20ones.-,Composition%20is%20Multiplication,-Here%E2%80%99s%20one%20way) - applying one function then the next. With function composition like $f(g(x))$, we read the order of functions from right to left.

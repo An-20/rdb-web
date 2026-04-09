@@ -31,7 +31,7 @@ y &= \sinh^{-1}(x) \\
 \frac{\textrm{d}y}{\textrm{d}x} &= \frac{1}{\sqrt{1 + x^2}}
 \end{split}
 $$
-Note that here, the derivative of $\sinh^{-1}x$ exists for all $x$, but for $\cosh^{-1}x$, the derivative does not exist for $x=1$ as the [[6 - Hyperbolic Functions#Inverse hyperbolic functions|graph]] becomes infinitely steep.
+Note that here, the derivative of $\sinh^{-1}x$ exists for all $x$, but for $\cosh^{-1}x$, the derivative does not exist for $x=1$ as the [[Hyperbolic Functions#Inverse hyperbolic functions|graph]] becomes infinitely steep.
 
 Similar methods can be used to find all three inverse hyperbolic function derivatives. *All of the following are given in the formula book*:
 - $\frac{\textrm{d}}{\textrm{d}x}(\sinh^{-1}(x)) = \frac{1}{\sqrt{x^2 + 1}}$ ($\sinh^{-1}$ is defined for all $x \in \mathbb{R}$).

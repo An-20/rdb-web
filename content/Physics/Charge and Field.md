@@ -1,7 +1,7 @@
 An **electric field** is a region in space where a charged particle experiences an electric force. Electric field lines show the direction that a small positive test charge would experience a force if it were placed in the field. The greater the density of field lines, the greater the force.
 
 #### Force and Field Strength
-The **force**, $F$ is given by:
+The **force** due to the electric field, $F$ is given by:
 $$
 F = \frac{kQq}{r^2}\quad\textrm{where}\,k=\frac{1}{4\pi\varepsilon_0}
 $$
@@ -49,10 +49,12 @@ For a **charged particle moving in a magnetic field**, $F = Bqv$. The left-hand 
 Equating this force with the centripetal force in circular motion, $F = \frac{mv^2}{r}$, can be used to find the radius of circular motion for a charged particle moving in a magnetic field.
 
 #### Electron charge
-The charge on the electron is discrete; all charged particles^[1] have charge equal to some integer multiple of the elementary charge, $1.60\times10^{-19}\,\textrm{C}$.
+The charge on the electron is discrete; all charged particles^[^1] have charge equal to some integer multiple of the elementary charge, $1.60\times10^{-19}\,\textrm{C}$.
 
-This was first shown in Millikan's oil drop experiment. In the experiment:
+This was first shown in **Millikan's oil drop experiment**. In the experiment:
 - An atomiser creates a mist with small droplets of oil.
 - The droplets are ionised by X-rays, causing the droplets to become charged. 
 - A potential difference is applied across two metal plates, creating an electric field.
 - The oil droplets are observed as they fall, and balancing forces allows for the calculation of the charge on the oil droplets.
+
+[^1]: Other than quarks (which don't exist by themselves)

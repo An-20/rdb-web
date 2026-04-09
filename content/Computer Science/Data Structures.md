@@ -31,11 +31,23 @@ A **hash table** stores a collection of items for quick retrieval. It is typical
 A hash table can be used to implement a **dictionary**, which is a mapping from keys to values.
 
 ## Vectors
-A **vector** is a list of numbers ($[2.71, 3.14, -1.0]$), a function ($f(0) = 2.71, f(1) = 3.14, f(2) = -1.0$), and a geometric place in space ($\mathbb{R}^3$).
+A **vector** can be represented as:
+- A **list** (or 1-D array) of numbers: $[2.71, 3.14, -1.0]$
 
-The **convex combination** of two vectors $u$ and $v$ is given by $\alpha u + \beta v$ where $\alpha, \beta \gt 0$ and $\alpha + \beta = 1$.
+- A **function**: $f(0) = 2.71, f(1) = 3.14, f(2) = -1.0$
+- A function, alternatively written $f: S\mapsto \mathbb{R}$, where $S$ is the domain, $\mathbb{R}$ is the co-domain, and $\mapsto$ means 'maps to':
+	- $0 \mapsto 2.71$, $1 \mapsto 3.14$, $2 \mapsto -1.0$
+- A function, represented as a dictionary:
+	- In Python, `{0: 2.71, 1: 3.14, 2: -1.0}`
 
-The **dot product** of two vectors $u = [u_1, \dots, u_n]$ and $v = [v_1, \dots, v_n]$ is $u \cdot v = u_1v_1 + \cdots + u_n v_n$. This can be used to find the angle between two vectors.
+- A **geometric place** in space: $\mathbb{R}^3$, a 3-vector over $\mathbb{R}$.
+	- A vector can also be represented as an **arrow** with its tail at the origin and the head at a point in space.
+
+Vectors can be **added** to achieve translation, or multiplied by a scalar to achieve **scaling**.
+
+The **convex combination** of two vectors $u$ and $v$ is given by $\alpha u + \beta v$ where $\alpha, \beta \ge 0$ and $\alpha + \beta = 1$.
+
+The **dot product** of two vectors $u = [u_1, \dots, u_n]$ and $v = [v_1, \dots, v_n]$ is $u \cdot v = u_1v_1 + \cdots + u_n v_n$. This can be used to find the angle between two vectors, as $u \cdot v = |u||v| \cos\theta$, where $\theta$ is the angle between $u$ and $v$.
 
 ## Graphs
 **Graphs** are used to model more complex relationships. A graph is the set of nodes and the set of edges connecting nodes. A graph can be directed or undirected, and weighted or unweighted.
