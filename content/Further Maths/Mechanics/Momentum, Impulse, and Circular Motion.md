@@ -50,5 +50,6 @@ Generally, circular motion problems will involve **resolving forces** acting hor
 
 The author regrets that there are no additional notes (seriously). Completing large numbers of circular motion practice problems is highly recommended. The author concedes that this topic has been haphazardly shoved here because it is too short to warrant its own page.
 
+
 [^1]: **Footnote on perfectly inelastic collisions**
 	For this course, 'inelastic' is taken to mean 'perfectly inelastic', that is $e=0$ (this is mentioned in the specification).

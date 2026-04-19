@@ -1,17 +1,5 @@
-## Displacement and Velocity
-**Displacement** is a vector quantity that represents an object's distance and direction away from its starting point. The related scalar is distance, which represents the total length of the path travelled.
-
-**Velocity** is a vector quantity that represents how fast and in what direction an object is moving. The related scalar is speed.
-
-**Displacement - time graphs**
-The gradient of a displacement-time graph gives velocity.
-
-**Velocity-time graphs**
-The gradient of a velocity-time graph gives acceleration.
-The area under a velocity-time graph gives displacement.
-
-## Vectors
-Vectors can be added and subtracted using standard methods. Vectors can also be **resolved** into **components**:
+#### Vectors
+**Vectors** represent quantities with magnitude and direction. They can be added and subtracted using standard methods. Vectors can also be **resolved** into **components**:
 ```tikz
 \usepackage{tikz}
 \usetikzlibrary{decorations, decorations.text,backgrounds}
@@ -35,11 +23,19 @@ Vectors can be added and subtracted using standard methods. Vectors can also be 
 \end{document}
 ```
 
-## Iterative Models
-**Iterative models** work by going step-by-step, simulating the behaviour of an object.
-- An advantage is that iterative models can be used for when there are many variables e.g. air resistance increases as velocity increases.
-- A disadvantage is that they do not accurately model reality, as they work in discrete steps, assuming that some variables do not change during each step.
-The accuracy of an iterative model can be increased by reducing the size of each time step.
+**Perpendicular components** of a force act independently. This is the principle later used for SUVAT equations.
+
+#### Displacement and velocity
+**Displacement** is a vector quantity that represents an object's distance and direction away from its starting point. The related scalar is distance, which represents the total length of the path travelled.
+
+**Velocity** is a vector quantity that represents how fast and in what direction an object is moving. The related scalar is speed.
+
+**Displacement - time graphs**
+The gradient of a displacement-time graph gives velocity.
+
+**Velocity-time graphs**
+The gradient of a velocity-time graph gives acceleration.
+The area under a velocity-time graph gives displacement.
 
 ## SUVAT
 There are 5 **SUVAT** equations for motion with constant acceleration (the third is rarely ever used):
@@ -53,6 +49,8 @@ v &= u + at
 \end{split}
 $$
 Where $u$ is initial velocity, $v$ is final velocity, $s$ is displacement, $t$ is time, and $a$ is acceleration.
+
+Average velocity with constant acceleration is given by $\frac{v + u}{2}$.
 
 #### Projectile motion
 For **projectile motion**, the idea is to apply SUVAT separately for both the horizontal and vertical directions, and using the fact that the two times are equal; when an object reaches the ground vertically, it stops moving horizontally.
@@ -80,31 +78,41 @@ The time to maximum height (where the vertical velocity is zero) is exactly half
 \end{document}
 ```
 
-## Momentum
-Momentum is a vector quantity. It is the product of mass ($m$) and velocity ($v$).
-$$
-p = mv
-$$
-For any interaction in a closed system (elastic or inelastic), the **principle of conservation of momentum** holds. The total momentum before an interaction is equal to the total momentum after.
-
-In **elastic collisions**, kinetic energy is conserved, whilst in **inelastic collisions**, kinetic energy is not conserved, and some kinetic energy is transferred to heat, sound, or deformation.
+## Iterative Models
+**Iterative models** work by going step-by-step, simulating the behaviour of an object.
+- An advantage is that iterative models can be used for when there are many variables e.g. air resistance increases as velocity increases.
+- A disadvantage is that they do not accurately model reality, as they work in discrete steps, assuming that some variables do not change during each step.
+The accuracy of an iterative model can be increased by reducing the size of each time step.
 
 ## Newton's Laws of Motion
 **Newton's laws of motion** are:
 - An object at rest will remain at rest, and an object in motion will remain in motion, unless acted on by an external force.
-- $F = \frac{\Delta p}{\Delta t} = \frac{\Delta(mv)}{\Delta t} = m\frac{\Delta(v)}{\Delta t} = ma$
+- $F = \frac{\Delta p}{\Delta t} = \frac{\Delta(mv)}{\Delta t} = m\frac{\Delta(v)}{\Delta t} = ma$ (force is also rate of change of momentum).
 - For every action, there is an opposite and equal reaction. This is equivalent to the principle of conservation of momentum.
+
+#### Momentum
+Momentum is a vector quantity. It is the product of mass, $m$, and velocity, $v$.
+$$
+p = mv
+$$
+For any interaction in a closed system (elastic or inelastic), the principle of **conservation of momentum holds**: the total momentum before an interaction is equal to the total momentum after.
+
+In **elastic collisions**, kinetic energy is conserved, whilst in **inelastic collisions**, kinetic energy is not conserved, and some kinetic energy is transferred to heat, sound, or deformation.
 
 **Impulse**, $\Delta p$, is the change in momentum. It has units of $\textrm{N\,s}$ (newton seconds), or $\textrm{kg\,m\,s}^{-1}$ (kilogram metres per second). By $F = \frac{\Delta p}{\Delta t}$, $\Delta P = F \Delta t$. Impulse is also given by the **area under a force-time graph**.
 
 ## Work
-**Work** is the result of applying a force over a distance (in the line of action of the force):
+**Work** is the result of applying a force over a distance (in the line of action of the force). The work done is given by:
 $$
 W = F \Delta s = F s\cos \theta
 $$
-Where the $\cos\theta$ term corrects for distance not in the line of action of the force. This is an application of the [[Vectors#Dot Product|dot product]].
+Where $W$ is work done ($\text{J}$), $F$ is force ($\text{N}$), $\Delta s$ is distance in the line of action of the force ($\text{m}$), and $\theta$ is the angle between the line of action of the force and the displacement. 
+
+The $\cos\theta$ term corrects for distance not in the line of action of the force. This is an application of the [[Vectors#Dot Product|dot product]].
 
 #### Energy
+The principle of the **conservation of energy** states that energy cannot be created or destroyed, and can only be transferred from one store to another.
+
 **Energy** is the capacity to do work. For motion, there are two energy equations:
 $$
 E = mgh = \frac{1}{2}mv^2

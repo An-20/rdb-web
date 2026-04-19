@@ -59,6 +59,7 @@ procedure Djkstra(G, v) is
 ```
 
 
+**Footnotes**
 [^1]: **Footnote on depth-first traversals**
 	It may be easier to understand by just reading the pseudocode. Both recursive and non-recursive examples are below (from [Wikipedia](https://en.wikipedia.org/wiki/Depth-first_search)).
 ```

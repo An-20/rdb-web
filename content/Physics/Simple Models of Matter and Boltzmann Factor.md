@@ -8,8 +8,8 @@ When describing an **ideal gas**, the following assumptions are made:
 - Newton's laws of motion apply
 - Gravitational, electrostatic and Van de Waals forces can be ignored
 - The motion of all molecules is random
-- All molecules travel in straight lines
-*IS: The top three assumptions in bold are mentioned explicitly in the specification.*
+- All molecules travel in straight lines.
+*IS*: The top three assumptions in bold are mentioned explicitly in the specification.
 
 **Boyle's Law** states that for a constant temperature, the volume of a fixed mass of gas is inversely proportional to its pressure:
 $$
@@ -64,7 +64,7 @@ E_k \approx kT
 $$
 
 #### Gas Law Derivation
-Consider a particle of mass $m$ moving at velocity $v$ in a cubic box with side length $x$.
+*NIS*: Consider a particle of mass $m$ moving at velocity $v$ in a cubic box with side length $x$.
 - Assume that the particle is moving only perpendicular to a given wall. In general, one third of the total kinetic energy is in each perpendicular direction[^1].
 - When the particle collides with a wall, it applies an impulse of $2mv$. 
 - For a given wall, this happens every $\frac{2x}{v}$ seconds, so there are $\frac{v}{2x}$ collisions with a given wall per second.
@@ -98,7 +98,7 @@ Other physical processes requiring an activation energy are:
 - Conduction in semiconductors
 - Viscous flow
 - Nuclear fusion
-*IS: The first five of these processes are mentioned explicitly in the specification.*
+*IS*: The first five of these processes are mentioned explicitly in the specification.
 
 The **Boltzmann factor**, $f$, is defined as:
 $$

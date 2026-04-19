@@ -19,7 +19,7 @@ An **algorithm** is a finite, precisely described sequence of steps to solve a p
 - Implementing the models in data structures
 - Executing the code.
 
-(*IS*) Computer science involves building clean abstract models (abstractions) describing messy, noisy real-world objects or phenomena. Computer scientists choose what to include or discard in a model, to use the minimum amount of detail necessary to model the problem in order to solve a given problem to the required degree of accuracy.
+*IS*: Computer science involves building clean abstract models (abstractions) describing messy, noisy real-world objects or phenomena. Computer scientists choose what to include or discard in a model, to use the minimum amount of detail necessary to model the problem in order to solve a given problem to the required degree of accuracy.
 
 Computer science puts models into action to solve problems. This involves creating algorithms that use the data that has been modelled.
 
@@ -92,7 +92,7 @@ BNF represents some languages that cannot be represented using regular expressio
 #### Classification of algorithms
 Algorithms can be compared by expressing their **complexity** as a function relative to the size of the problem input. Algorithms can be more **efficient time-wise**, or **space-wise**. 
 
-(*IS*): Efficiently implementing automated abstractions means designing data models and algorithms that run quickly while taking up minimal amounts of resources such as memory.
+*IS*: Efficiently implementing automated abstractions means designing data models and algorithms that run quickly while taking up minimal amounts of resources such as memory.
 
 Mathematical functions are used to describe complexities:
 - A **linear function** is of the form $y = kx$, for a constant $k$, e.g. $y = 2x$.

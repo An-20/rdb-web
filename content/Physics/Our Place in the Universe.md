@@ -9,7 +9,7 @@ Several units are used to measure cosmic distances:
 **Radar** (radio detection and ranging) works by timing the delay between sending a radio pulse and receiving the reflected pulse. By using the speed of light, the total round-trip distance can be calculated, and halved to find the one-way distance. This method uses the **relativistic principle of the invariance of the speed of light**. **Lidar** works in a similar way, but using light waves made by lasers instead of radio waves.
 
 #### Parallax
-*NIS: Parallax is never explicitly mentioned in the specification.*
+*NIS*: Parallax is never explicitly mentioned in the specification.
 **Parallax** is the shift in an object's position when it is viewed from different locations. This causes nearby objects to appear to shift more (move faster) than distant objects. The **baseline** is the known distance (either 1 or 2 au). The **parallax angle** is the apparent angle that the near star has moved through, often measured in arcseconds.
 
 A circle is divided into 360 **degrees** (360$\degree$), each of which is divided into 60 **arcminutes** (60$'$), each of which is divided into 60 **arcseconds** (60$''$). Thus, an arcsecond represents $\frac{1}{360 \times 60 \times 60} = \frac{1}{1296000}$ of a complete rotation.
@@ -55,7 +55,7 @@ A circle is divided into 360 **degrees** (360$\degree$), each of which is divide
 \node[above=2pt, align=center] at (0, 2.4) {Earth's motion\\around Sun};
 
 % near star
-\filldraw[magenta] (NearStar) circle (0.13);
+\filldraw[red] (NearStar) circle (0.13);
 \node[above=30pt] at (NearStar) {Near star};
 
 % distant stars
@@ -66,15 +66,15 @@ A circle is divided into 360 **degrees** (360$\degree$), each of which is divide
 }
 
 % apparent positions
-\filldraw[magenta!40] (FarFromTop) circle (0.13);
-\filldraw[magenta!40] (FarFromBot) circle (0.13);
+\filldraw[red!40] (FarFromTop) circle (0.13);
+\filldraw[red!40] (FarFromBot) circle (0.13);
 
 % apparent parallax motion arrow
 \def\distantArcXRight{10 - 5 * cos(30) + 5};
-\draw[magenta, thick] ({\distantArcXRight + 0.6}, 1.8) -- ({\distantArcXRight + 0.6}, -1.8);
-\draw[magenta, thick] ({\distantArcXRight + 0.2}, 1.8) -- ({\distantArcXRight + 0.8}, 1.8);
-\draw[magenta, thick] ({\distantArcXRight + 0.2}, -1.8) -- ({\distantArcXRight + 0.8}, -1.8);
-\node[magenta, align=left] at ({\distantArcXRight + 2.4}, 0) {Apparent parallax\\motion of near star};
+\draw[thick] ({\distantArcXRight + 0.6}, 1.8) -- ({\distantArcXRight + 0.6}, -1.8);
+\draw[thick] ({\distantArcXRight + 0.2}, 1.8) -- ({\distantArcXRight + 0.8}, 1.8);
+\draw[thick] ({\distantArcXRight + 0.2}, -1.8) -- ({\distantArcXRight + 0.8}, -1.8);
+\node[align=left] at ({\distantArcXRight + 2.4}, 0) {Apparent parallax\\motion of near star};
 
 % distant stars label
 \node at ({\distantArcXRight-0.5}, 3) {Distant stars};
@@ -100,7 +100,7 @@ A circle is divided into 360 **degrees** (360$\degree$), each of which is divide
 ```
 
 #### Standard candles
-*NIS: Standard candles are never explicitly mentioned in the specification.*
+*NIS*: Standard candles are never explicitly mentioned in the specification.
 Some stars, **Cepheid variables**, have a variation in brightness that depends on their absolute brightness. The longer the period of the variation in brightness, the brighter the star. By comparing the absolute brightness of the star with the apparent brightness, the distance to the star can be calculated using the inverse square law.
 
 #### Doppler shifts
@@ -332,7 +332,7 @@ A graph of total energy, $E$, against velocity, $v$, shows how as the total ener
 \end{document}
 ```
 
-The following formulae are all *given in the formula booklet*:
+The following formulae are all *given* in the formula booklet:
 $$
 \begin{split}
 \textrm{mass-energy relationship:}\quad &E_\textrm{rest} = mc^2
@@ -342,7 +342,7 @@ $$
 $$
 
 #### Time dilation and length contraction
-*IS: Time dilation is explicitly mentioned in the specification. The derivation, however, is very likely not required.*
+*IS*: Time dilation is explicitly mentioned in the specification. The derivation, however, is very likely not required.
 For an observer, let **wristwatch time** $\tau$ be the time recorded by a clock travelling with that observer.
 
 Consider a light clock - a pair of mirrors with a pulse of light bouncing back and forth. A thought experiment can be carried out to explain where length contraction and time dilation come from.
@@ -422,9 +422,9 @@ $$
 $$
 So to the observer, the time taken per tick was $\tau$, while from the clock's frame of reference, the time taken per tick was $t = \tau\gamma$. As $\gamma \ge 1$, the clock ticks 'slower' from the clock's frame of reference.
 
-In general, time passes more slowly for objects moving at high speeds, compared to stationary observers. The **time dilation** is given by $t = \gamma\tau$, which is *not on the formula booklet*.
+In general, time passes more slowly for objects moving at high speeds, compared to stationary observers. The **time dilation** is given by $t = \gamma\tau$, which is *not on* the formula booklet.
 
-*NIS: Length contraction is not explicitly mentioned on the specification.*
+*NIS*: Length contraction is not explicitly mentioned on the specification.
 **Length contraction** is another consequence of special relativity.
 - Consider a particle moving at speed $v$ relative to a stationary observer.
 - A clock moving with the particle measures a time $\tau$ for the rod to travel a length $L$. So $v = \frac{L}{\tau}$

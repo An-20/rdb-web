@@ -13,34 +13,30 @@
 **First normal form**
 - Tables do not contain repeating attributes or groups
 - Data is atomic 
-- Will sometimes result in composite primary key
+- Will sometimes result in a composite primary key.
 
 **Second normal form**
-- 1NF must be achieved first 
-- A database in 1NF may already meet 2NF  
+- 1NF must be achieved first; a database in 1NF may already be in 2NF  
 - Every non-primary key attribute must depend on the whole of the primary key  
-- Relations may be split into 2 or more relations
+- Relations may be split into 2 or more relations.
 
 **Third normal form**
-- 2NF must be achieved first  
-- A database in 2NF may already meet 3NF  
-- Every non-primary key attribute must be solely dependent on the primary key to separate relations - it can't be dependent on any other attribute.
-- Relations may be split into 2 or more relations
+- 2NF must be achieved first ; a database in 2NF may already be in 3NF  
+- Every non-primary key attribute must be solely dependent on the primary key to separate relations - it can't be dependent on any other attribute
+- Relations may be split into 2 or more relations.
 
 #### String data types
 **CHAR**  
 - Fixed length 
 - Any remaining space in the field is padded with blanks 
 - 1 byte per character 
-- CHAR(100) means it can hold maximum 100 characters 
-- E.g. 'Hat' would take up 100 bytes 
+- CHAR(100) means it can hold maximum 100 characters, e.g. 'abc' would take up 100 bytes.
 
 **VARCHAR** 
 - Variable length 
 - Holds only the characters assigned to it 
 - 1 byte per character plus 1-2 bytes to hold length information 
-- VARCHAR(100) means it can hold maximum 100 characters 
-- E.g. ‘Hat’ would take up 5 bytes
+- VARCHAR(100) means it can hold maximum 100 characters, e.g. ‘abc’ would take up 5 bytes.
 
 #### SQL
 SQL commands use the following syntax:

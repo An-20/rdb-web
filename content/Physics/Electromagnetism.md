@@ -19,7 +19,7 @@ $$
 This is known as **Faraday's Law of electromagnetic induction**. The **negative sign** is a result of **Lenz's Law**, which states that the induced e.m.f. in a circuit as a result of a changing magnetic field creates a current with a direction that creates a magnetic field that opposes the original change in the magnetic field.
 
 #### Electromagnetic circuits
-In a **magnetic circuit**, the flux lines form a closed loop. Similar to conductance in electrical circuits, magnetic circuits have **permeance**; higher permeance means more flux. Thus, magnetic circuits are often made from ferromagnetic materials with a **high magnetic permeability**, for example iron. The magnetic equivalent of p.d. is **current-turns** $NI$ (equal to the current in a coil multiplied by the number of turns), while the magnetic equivalent of electric current is flux $\Phi$. As in a electrical circuit, higher current-turns will cause a higher flux.
+In a **magnetic circuit**, the flux lines form a closed loop. Similar to conductance in electrical circuits, magnetic circuits have **permeance**; higher permeance means more flux. Thus, magnetic circuits are often made from ferromagnetic materials with a **high magnetic permeability**, for example iron. (*IS*) The magnetic equivalent of p.d. is **current-turns** $NI$ (equal to the current in a coil multiplied by the number of turns), while the magnetic equivalent of electric current is flux $\Phi$. As in a electrical circuit, higher current-turns will cause a higher flux.
 
 For a electric circuit, the conductance is $G = \frac{\sigma A}{l}$, where $\sigma$ is the conductivity. Similarly, for magnetic circuit, the **permeance is maximised** by **maximizing surface area** and **minimising the length of flux lines**. An electric circuit has a large current when there is a high conductance, so a magnetic circuit has a large flux when there is a high permeance. Iron has a magnetic permeability 200,000 times that of air, so flux lines don't 'leak out' of iron cores. If there is a gap in the magnetic circuit, the permeance will be greatly reduced because of air's low permeability.
 
@@ -64,6 +64,11 @@ A **generator** uses motion to create a changing magnetic field, to induce an e.
 $$
 \varepsilon = BLv
 $$
+Derivation of the above result:
+- A force of $F = Bqv$ is experienced by the coil.
+- This force is also equal to $F = qE$, where $E$ is the field strength, given by $E = \frac{\epsilon}{L}$.
+- Equating gives $Bqv = \frac{q\epsilon}{L}$, and rearranging gives the desired result.
+
 For a coil with angle $\theta$ between its normal and the direction of magnetic flux lines, the flux through it is given by $BA\cos\theta$. **Generators** constantly rotate the coil to cause a change in flux. Let $\theta = \omega t$, where $\omega$ is the angular velocity of the coil. The flux is thus $BA\cos(\omega t)$, while the flux linkage is $BAN\cos(\omega t)$.
 
 By differentiating the flux linkage, we get that e.m.f. is given by:

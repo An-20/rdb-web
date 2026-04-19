@@ -212,7 +212,7 @@ The diagram below shows two lines with angle $\theta$ between them. $\boldsymbol
 \usetikzlibrary{decorations, decorations.text, decorations.markings, backgrounds}
 \usetikzlibrary{positioning, angles, quotes}
 \begin{document}
-\begin{tikzpicture}[thick, background rectangle/.style={fill=white, rounded corners=.55cm}, show background rectangle]
+\begin{tikzpicture}[thick]
 	\begin{scope}[very thick,decoration={
 		markings,
 		mark=at position 0.5 with {\arrow{>}}}
@@ -243,7 +243,7 @@ The $\cos{\theta}$ is there to multiply the amount of the vectors that point in 
 \usetikzlibrary{positioning, angles, quotes}
 \begin{document}
 
-\begin{tikzpicture}[thick, background rectangle/.style={fill=white, rounded corners=.55cm}, show background rectangle]
+\begin{tikzpicture}[thick]
 	\begin{scope}[very thick,decoration={
 		markings,
 		mark=at position 0.5 with {\arrow{>}}}
@@ -294,7 +294,7 @@ Given two vectors, the cross product (vector product) $\boldsymbol{a} \times \bo
 \usetikzlibrary{positioning, angles, quotes}
 
 \begin{document}
-\begin{tikzpicture}[thick, background rectangle/.style={fill=white, rounded corners=.55cm}, show background rectangle]
+\begin{tikzpicture}[thick]
 	\draw[ultra thick,-latex](0,0)--(3,0)node[midway,below]{$a$};
 	\draw[ultra thick,-latex](0,0)--(1,1)node[midway,above]{$b$};
 	\draw[ultra thick,-latex](0,0)--(0,3)node[pos=0.7,right]{$a\times b$};

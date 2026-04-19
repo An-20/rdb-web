@@ -49,7 +49,7 @@ For a **charged particle moving in a magnetic field**, $F = Bqv$. The left-hand 
 Equating this force with the centripetal force in circular motion, $F = \frac{mv^2}{r}$, can be used to find the radius of circular motion for a charged particle moving in a magnetic field.
 
 #### Electron charge
-The charge on the electron is discrete; all charged particles^[^1] have charge equal to some integer multiple of the elementary charge, $1.60\times10^{-19}\,\textrm{C}$.
+The charge on the electron is discrete; all charged particles have charge equal to some integer multiple of the elementary charge^[^1], $1.60\times10^{-19}\,\textrm{C}$.
 
 This was first shown in **Millikan's oil drop experiment**. In the experiment:
 - An atomiser creates a mist with small droplets of oil.
@@ -57,4 +57,5 @@ This was first shown in **Millikan's oil drop experiment**. In the experiment:
 - A potential difference is applied across two metal plates, creating an electric field.
 - The oil droplets are observed as they fall, and balancing forces allows for the calculation of the charge on the oil droplets.
 
-[^1]: Other than quarks (which don't exist by themselves)
+
+[^1]: **Footnote on elementary charge** Other than quarks (which don't exist by themselves).

@@ -3,7 +3,7 @@ The **activity** $A$ (in Becquerel $\text{Bq}$) of a sample of a radioactive mat
 $$
 A = \lambda N
 $$
-As each decay reduces the number of remaining unstable nuclei, the differential equation $\frac{\text{d} N}{\text{d} t} = -\lambda N$ is formed, which can be solved:
+As each decay reduces the number of remaining unstable nuclei, the differential equation $\frac{\text{d} N}{\text{d} t} = -\lambda N$ is formed, which can be solved (*NIS*):
 $$
 \begin{split}
 \frac{\text{d} N}{\text{d} t} &= -\lambda N
@@ -25,9 +25,10 @@ The **half-life** of a radioactive sample can be defined as:
 - The time taken for the number of radioactive particles present, $N$, to halve from an original value.
 - The time taken for the activity, $A$, of a source to halve from an original value.
 
-$N = N_0$ at time $t = 0$. After one half-life, $N = \frac{1}{2}N_0$ at $T = T_{1/2}$. 
-$N = N_0 e^{-\lambda t}$ therefore becomes $\frac{1}{2}N_0 = N_0e^{-\lambda T_{1/2}}$.
-Solving for $T_{1/2}$, we obtain:
+Derivation:
+- $N = N_0$ at time $t = 0$. After one half-life, $N = \frac{1}{2}N_0$ at $T = T_{1/2}$. 
+- $N = N_0 e^{-\lambda t}$ therefore becomes $\frac{1}{2}N_0 = N_0e^{-\lambda T_{1/2}}$.
+- Solving for $T_{1/2}$, we obtain:
 $$
 T_{1/2} = \frac{\ln2}{\lambda} 
 $$
@@ -58,7 +59,7 @@ $$
 #### Dielectric breakdown
 The capacitance of a set of charged parallel plates increases by the insertion of a dielectric material. The capacitance is inversely proportional to the electric field between the plates, and the presence of the dielectric reduces the electric field.
 
-*NIS: The equation below is not on the specification.*
+*NIS*: The equation below is not on the specification. It was discussed in a previous year's pre-release.
 The **capacitance** of a capacitor is given by:
 $$
 C = \frac{\varepsilon_r\varepsilon_0A}{d}
@@ -69,7 +70,7 @@ Where:
 - $A$ is the cross-sectional area
 - $d$ is the distance between the plates
 
-As the p.d increases, the stored energy increases. When the charge is large enough, the dielectric will break down and the charge will start to flow between the plates.
+As the p.d. increases, the stored energy increases. When the charge is large enough, the dielectric will break down and the charge will start to flow between the plates.
 
 #### Capacitor Discharge
 When a charged capacitor is allowed to **discharge** through a resistor:
@@ -172,4 +173,3 @@ This gives the below graphs:
 ```
 
 For charge and p.d., the **time constant** $RC$ now represents the time to charge to $1 - \frac{1}{e}$ of the final value, or 63%. The equation for current is the same for a charging or discharging capacitor.
- 

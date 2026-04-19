@@ -84,6 +84,6 @@ For a uniform gravitational field $g$, the change in gravitational potential ene
 
 Gravitational potential energy does not change when moving along equipotential lines lines, because by $E = Fs$, **no work is done when the force is perpendicular to the displacement**, resulting in **no work being done whilst moving along equipotential lines**.
 
-#### Footnotes
+
 [^1]: **Footnote on signs of forces and potential energies**
 	Typically, it makes more sense to define the sign of a potential energy (for gravity potential energy is 0 at $\infty$ and thus sign is negative), then find the sign of the force using $F = -\frac{\text{d}U}{\text{d}x}$ if the potential energy $U$ is some function of position $x$ (work must be done against the force in the field, so there is a negative sign).

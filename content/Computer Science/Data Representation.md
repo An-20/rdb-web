@@ -107,5 +107,6 @@ The **Vernam Cipher** requires a one-time pad (key) equal in or longer than the 
 While the Vernam Cipher is theoretically unbreakable, Other ciphers are **computationally secure**. In theory, with enough ciphertext and time, every other cryptographic algorithm can be broken.
 
 
+**Footnotes**
 [^1]: **Footnote on UTF-16**
 	UTF-16 is actually a variable-width encoding that uses 8 or 16 bits per character.
