@@ -13,7 +13,7 @@ If a force $F$ is applied at an angle $\theta$ to the direction of motion, the c
 \usetikzlibrary{positioning, angles, quotes}
 \begin{document}
 
-\begin{tikzpicture}[thick, background rectangle/.style={fill=white, rounded corners=.55cm}, show background rectangle]
+\begin{tikzpicture}[thick]
 	\begin{scope}[very thick,decoration={
 		markings,
 		mark=at position 0.5 with {\arrow{>}}}
@@ -80,5 +80,6 @@ $$
 $$
 
 
+**Footnotes**
 [^1]: **Footnote on work done by a force at an angle to the direction of motion**
-	$\text{work done} = \text{force} \times \text{distance} \times \cos\theta = \boldsymbol{F} \cdot \boldsymbol{x}$ (by the dot product), but this is A-level content.
+	$\text{work done} = \text{force} \times \text{distance} \times \cos\theta = \boldsymbol{F} \cdot \boldsymbol{x}$ (by the [[Vectors#Dot Product|dot product]]).

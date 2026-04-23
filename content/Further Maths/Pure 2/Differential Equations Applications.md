@@ -57,7 +57,7 @@ $$
 \implies &\frac{\textrm{d}^2x}{\textrm{d}t^2} + k\frac{\textrm{d}x}{\textrm{d}t} + \omega^2x = 0 \quad\textrm{where}\,k=\frac{K}{m}
 \end{split}
 $$
-This is called **damped simple harmonic motion**. The solutions to this differential equation depend on the discriminant of the auxiliary equation, from [[Differential Equations]].
+This is called **damped simple harmonic motion**. The solutions to this differential equation depend on the discriminant of the auxiliary equation, from [[Differential Equations|Further Differential Equations]].
 $$
 \lambda^2 + k\lambda + \omega^2 = 0
 $$

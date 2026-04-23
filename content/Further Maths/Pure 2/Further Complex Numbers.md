@@ -1,4 +1,4 @@
-#### De Moivre's Theorem
+#### De Moivre's theorem
 In Pure 1, the modulus-argument form of a complex number was introduced, with multiplication of two complex numbers involving multiplying their moduli and adding their arguments. Repeating this process give's **De Moivre's Theorem**:
 $$
 z^n = (r(\cos\theta + i\sin\theta))^n = r^n(\cos n\theta + i\sin n\theta)
@@ -49,13 +49,12 @@ $$
 This can be used to factorise expressions of the form $z^n+c$.
 
 #### Geometry of complex numbers
-**Multiplication** by $r\cis\theta$ corresponds to a rotation about the origin through angle $\theta$ and an enlargement by scale factor $r$.
+**Multiplication** by $r\operatorname{cis}\theta$ corresponds to a rotation about the origin through angle $\theta$ and an enlargement by scale factor $r$.
 
-**Division** by $r\cis\theta$ corresponds to a rotation about the origin through angle $-\theta$ and an enlargement by scale factor $\frac{1}{r}$.
+**Division** by $r\operatorname{cis}\theta$ corresponds to a rotation about the origin through angle $-\theta$ and an enlargement by scale factor $\frac{1}{r}$.
 
 #### Footnotes
 **Proof of Euler's Formula**
-*This is taken from non-RDB private notes.*
 The Maclaurin expansion of $f(x)$ is given by:
 $$
 \begin{split}

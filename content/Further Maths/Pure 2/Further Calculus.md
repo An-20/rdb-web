@@ -85,7 +85,7 @@ $$
 \\ &= \frac{\sqrt2}{2}\, \tan^{-1}\left(\frac{\sqrt2}{2}(3x + 4)\right) + C
 \end{split}
 $$
-These integrals often require very careful applications of the reverse chain rule.
+These integrals often require careful applications of the reverse chain rule.
 
 #### Integrating using partial fractions
 When there is a quadratic factor in the denominator of a rational expression, there are three different possibilities:

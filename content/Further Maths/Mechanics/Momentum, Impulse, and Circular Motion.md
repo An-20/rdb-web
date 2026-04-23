@@ -41,15 +41,7 @@ $$
 v = -eu
 $$
 
-## Circular Motion
-For an object moving in a **horizontal circular** path of radius $r$ m, and at a constant angular speed of $\omega\,\text{rad\,s}^{-1}$:
-- The **linear speed** is given by $v = r\omega$
-- The **acceleration towards the centre** is given by $a = v\omega = r\omega^2 = \frac{v^2}{r}$
 
-Generally, circular motion problems will involve **resolving forces** acting horizontally and vertically. The solution may also involve solving simultaneous equations.
-
-The author regrets that there are no additional notes (seriously). Completing large numbers of circular motion practice problems is highly recommended. The author concedes that this topic has been haphazardly shoved here because it is too short to warrant its own page.
-
-
+**Footnotes**
 [^1]: **Footnote on perfectly inelastic collisions**
 	For this course, 'inelastic' is taken to mean 'perfectly inelastic', that is $e=0$ (this is mentioned in the specification).

@@ -38,9 +38,9 @@ A subgroup of a group $G$ is a subset of $G$ that satisfies the group axioms.
 - A **proper subgroup** is a subgroup of $G$ that is not $G$ itself (same idea as a proper subset).
 Any subgroup must contain the identity element. The identity element and any self-inverse element forms a subgroup.
 
-**Lagrange's theorem**[^2] states that the order of a subgroup $H$ must be a factor of the order of the group $G$. Therefore:
+**Lagrange's theorem** states that the order of a subgroup $H$ must be a factor of the order of the group $G$. Therefore:
 - The order of each element of $G$ is a factor of the order of $G$ (because each element can generate a cyclic subgroup $H$ such that the order of $H$ is equal to the order of the element, which must therefore be a factor of the order of $G$).
-- If $G$ has a prime order, then $G$ has no proper subgroups[^3].
+- If $G$ has a prime order, then $G$ has no proper subgroups[^2].
 
 #### Groups to know
 The specification requires knowledge of all groups with order $\le 7$. This includes cyclic groups, $K_{4}$ (the Klein 4-group), and $S_{3}$ (the symmetric group of order 3). The cyclic groups $Z_{n}$ can be thought of as the set of integers $\{0,1,2,\dots,n-1\}$ under the operation of addition modulo $n$.
@@ -53,6 +53,8 @@ $$
     e & e
 \end{array}
 $$
+In $Z_1$, $e$ has order 1.
+
 ###### Order 2
 There is one Abelian cyclic group of order 2, $Z_2$:
 $$
@@ -63,6 +65,8 @@ $$
     a & a & e
 \end{array}
 $$
+In $Z_2$, $e$ has order 1 and the other element $a$ has order 2.
+
 ###### Order 3
 There is one Abelian cyclic group of order 3, $Z_3$:
 $$
@@ -74,6 +78,8 @@ $$
     b & b & e & a
 \end{array}
 $$
+In $Z_3$, $e$ has order 1 and the other elements $a$ and $b$ have order 3.
+
 ###### Order 4
 There are two groups of order 4: the Abelian cyclic group $Z_4$ and the Abelian Klein 4-group $K_4$.
 $$
@@ -98,7 +104,10 @@ K_4:\,\,\,
     c & c & b & a & e
 \end{array}
 $$
-Where in $K_{4}$, each element is self-inverse. $K_{4}$ can also be thought of as the symmetries of a rectangle, where $a,b,c$ are a $180\degree$ rotation, or reflections in either axis (thus the elements are self-inverse).
+In $K_{4}$, each element is self-inverse, so $e$ has order 1 and the other elements $a$, $b$, and $c$ have order 2. $K_{4}$ can also be thought of as the symmetries of a rectangle, where $a,b,c$ are a $180\degree$ rotation, or reflections in either axis (thus the elements are self-inverse).
+
+In $Z_4$, $e$ has order 1, $a$ and $c$ have order 4, while $b$ has order 2 (is self-inverse).
+
 ###### Order 5
 There is one Abelian cyclic group of order 5, $Z_5$.
 $$
@@ -112,8 +121,10 @@ $$
     d & d & e & a & b & c
 \end{array}
 $$
+In $Z_5$, $e$ has order 1 and the other elements have order 5.
+
 ###### Order 6
-There are two groups of order 6: the Abelian cyclic group $Z_6$ and the symmetric group $S_3$ (or the dihedral group $D_3$)[^4].
+There are two groups of order 6: the Abelian cyclic group $Z_6$ and the symmetric group $S_3$ (or the dihedral group $D_3$)[^3].
 $$
 Z_6:\,\,\,
 \begin{array}{l|llllll}
@@ -145,7 +156,10 @@ Notes on $S_{3}$:
 - It is the smallest non-Abelian group, so the Cayley table is not symmetric about the diagonal.
 - In the above Cayley table, $e$ is the identity transformation $p,q,r$ can be thought of as reflections across the medians of an equilaterial triangle, and $s$ and $t$ can be thought of as $120\degree$ and $240\degree$ rotations.
 - Note how $p,q,r$ are all self-inverse (as expected for reflections) and how $s$ and $t$ are inverses of each other (as expected for $120\degree$ and $240\degree$ rotations).
- 
+- In $S_3$, $e$ has order 1, $p,q,r$ with order 2, and $s, t$ with order 3.
+
+In $Z_6$, $e$ has order 1, two elements have order 3, two elements have order 6, and one element has order 2 [^4].
+
 ###### Order 7
 There is one Abelian cyclic group of order 7, $Z_7$:
 $$
@@ -162,11 +176,16 @@ $$
 \end{array}
 $$
 
+
+**Footnotes**
 [^1]: **Footnote on Latin Squares**
 	The Cayley table of any group is a Latin square, but not all Latin squares represent a group. A Latin square represents a quasigroup, where there is a closed operation and an inverse element for all elements, but there is not necessarily associativity or an identity.
-[^2]: **Footnote on Lagrange's Theorem**
-	This is A-level content, but it's useful at AS so it's here anyways.
-[^3]: **Footnote on proper subgroups and the trivial subgroup**
+[^2]: **Footnote on proper subgroups and the trivial subgroup**
 	A group $G$ of prime order will still have the trivial subgroup. Whether the trivial subgroup is a proper subgroup is... debateable (the textbook says no, but Integral says yes).
-[^4]: **Footnote on $S_{3}$ / $D_{3}$ / $D_{6}$**
+[^3]: **Footnote on $S_{3}$ / $D_{3}$ / $D_{6}$**
 	The Internet can't agree on whether this group is $D_{3}$ or $D_{6}$, so maybe just call it $S_{3}$ (OCR use $S_{3}$).
+[^4]: **Footnote on orders of $Z_6$**
+	It could be helpful to consider $Z_6$ as the group of addition of 0 to 5 modulo 6:
+	- 3 has order 2 as 3 + 3 = 6
+	- 2 and 4 have order 3 as 2 + 2 + 2 = 6, 4 + 4 + 4 = 12
+	- 1 and 5 have order 6 as 6 \* 1 = 6 and 5 \* 6 = 30

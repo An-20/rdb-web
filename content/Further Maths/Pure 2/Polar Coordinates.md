@@ -8,7 +8,7 @@
 
 \begin{document}
 \pagestyle{empty}
-\begin{tikzpicture}[background rectangle/.style={fill=white, rounded corners=.55cm}, show background rectangle]
+\begin{tikzpicture}
 	\node at (-0.4,-0.4) {$0$};
 	\foreach \r in {1,2,3} {
 		\draw (0,0) circle (\r);
@@ -50,7 +50,7 @@ A polar equation of a curve is a relationship between $r$ and $\theta$. Below ar
 
 \begin{document}
 \pagestyle{empty}
-\begin{tikzpicture}[scale=0.6, background rectangle/.style={fill=white, rounded corners=.55cm}, show background rectangle]
+\begin{tikzpicture}[scale=0.6]
   \begin{scope}[shift={(0,0)}]
 	\foreach \r in {1,2,3} {
 		\draw (0,0) circle (\r);
@@ -77,7 +77,7 @@ A polar equation of a curve is a relationship between $r$ and $\theta$. Below ar
 	}
 	\draw[thick, blue, samples=200, domain=0:360]
 		plot ({2.5*cos(\x)}, {2.5*sin(\x)});
-	\node[align=left] at (0, -5) {r\,=\,2};
+	\node[align=left] at (0, -5) {r\,=\,2.5};
   \end{scope}
   
     \begin{scope}[shift={(10,0)}]
@@ -115,7 +115,7 @@ A polar equation of a curve is a relationship between $r$ and $\theta$. Below ar
 \end{document}
 ```
 
-For some curves, there might be values for $\theta$ for which the $r$ is not defined. If $r$ is negative, then the curve is not defined. Some calculators still plot parts of the curve with negative $r$, but *for this course $r$ must be positive for the curve to be defined*.
+For some curves, there might be values for $\theta$ for which the $r$ is not defined. If $r$ is negative, then the curve is not defined. Some calculators still plot parts of the curve with negative $r$, but for this course $r$ must be **positive** for the curve to be defined.
 
 ##### Features of polar curves
 **Minima and maxima**

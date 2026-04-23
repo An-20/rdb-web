@@ -10,7 +10,7 @@ Where $\theta$ is the angle between $\boldsymbol{a}$ and $\boldsymbol{b}$, and $
 \usetikzlibrary{positioning, angles, quotes}
 
 \begin{document}
-\begin{tikzpicture}[thick, background rectangle/.style={fill=white, rounded corners=.55cm}, show background rectangle]
+\begin{tikzpicture}
 	\draw[ultra thick,-latex](0,0)--(-1.2,1)node[midway,right]{$a$};
 	\draw[ultra thick,-latex](0,0)--(-3,0)node[midway,above]{$b$};
 	\draw[ultra thick,-latex](0,0)--(0,3)node[pos=0.7,right]{$a\times b$};
@@ -44,7 +44,7 @@ Consider **triangle** $\triangle OAB$, which has area $\frac{1}{2}\times OA\time
 \usetikzlibrary{positioning, angles, quotes}
 \begin{document}
 \pagestyle{empty}
-\begin{tikzpicture}[scale=0.75, background rectangle/.style={fill=white, rounded corners=.55cm}, show background rectangle]
+\begin{tikzpicture}[scale=0.75]
 	\begin{scope}[very thick,decoration={
 		markings,
 		mark=at position 0.5 with {\arrow{>}}}
@@ -80,7 +80,7 @@ Consider **parallelogram** $OACB$, which has area $OA \times BH = OA \times OB \
 \usetikzlibrary{positioning, angles, quotes}
 \begin{document}
 \pagestyle{empty}
-\begin{tikzpicture}[scale=0.75, background rectangle/.style={fill=white, rounded corners=.55cm}, show background rectangle]
+\begin{tikzpicture}[scale=0.75]
 	\begin{scope}[very thick,decoration={
 		markings,
 		mark=at position 0.5 with {\arrow{>}}}
@@ -127,9 +127,8 @@ $$
 - The volume of a **tetrahedron** with sides $\boldsymbol{a}$, $\boldsymbol{b}$. and $\boldsymbol{c}$ is given by one-sixth of the magnitude of the scalar triple product : $\frac{1}{6}|(\boldsymbol{a} \times \boldsymbol{b}) \cdot \boldsymbol{c} |$.
 - If the scalar triple product is zero, then the three vectors $\boldsymbol{a}$, $\boldsymbol{b}$. and $\boldsymbol{c}$ are coplanar, as they form a tetrahedron with zero volume (so they lie along a plane).
 
-> *we also ran out of budget for tikz diagrams here :(*
-> *no seriously do you know how hard 3d is*
 
-
+**Footnotes**
 [^1]: **Footnote on anticommutativity of the vector product**
 	The vector product is anticommutative, that is an operation $\star$ where $a \star b$ is the inverse to $b \star a$ (in this case the inverse is negating the value).
+	

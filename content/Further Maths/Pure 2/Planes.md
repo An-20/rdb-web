@@ -16,12 +16,12 @@ Let $A$ be a point in the plane and $P$ be any other point in the plane. The vec
 $$
 \begin{split}
 (\boldsymbol{r} - \boldsymbol{a}) \cdot \boldsymbol{n} = 0 &\implies \boldsymbol{r}\cdot\boldsymbol{n} = \boldsymbol{a}\cdot\boldsymbol{n}
-\\&\implies \boldsymbol{r}\cdot\boldsymbol{n} = d
+\\&\implies \boldsymbol{r}\cdot\boldsymbol{n} = k
 \end{split}
 $$
 By rewriting $\boldsymbol{r} = \left(\begin{smallmatrix}x \\ y \\ z\end{smallmatrix}\right)$ and $\boldsymbol{n} = \left(\begin{smallmatrix}n_1 \\ n_2 \\ n_3\end{smallmatrix}\right)$, we get:
 $$
-n_1 x + n_2 y + n_3 z = d
+n_1 x + n_2 y + n_3 z = k
 $$
 
 To **convert from vector form to Cartesian form**, use the cross product of the two direction vectors to find the normal vector of the plane. Then, use any point in the plane to find the constant dot product.
@@ -32,7 +32,7 @@ To **convert from Cartesian form to vector form**, find any three points in the 
 The following method requires the equation of the plane in Cartesian form and the equation of the line in vector form:
 - Using the vector equation of the line, find expressions in terms of the parameter (often $\lambda$) for the $x,y,z$ components. 
 - Substitute each into the Cartesian plane equation.
-- Solve for $\lambda$ (or if the equation is consistent, the line and plane do not intersect).
+- Solve for $\lambda$ (or if the equation is inconsistent, the line and plane do not intersect).
 
 #### Angles between lines and planes
 The angle between the line with direction vector $\boldsymbol{d}$ and the plane with normal $\boldsymbol{n}$ is $90\degree - \phi$, where $\phi$ is the acute angle between $\boldsymbol{n}$ and $\boldsymbol{d}$. 
@@ -41,7 +41,7 @@ The angle between two planes is the angle between their normals.
 
 #### Distances between points, lines, and planes
 **Distance between a point and plane**
-For a plane with equation $\boldsymbol{r} \cdot \boldsymbol{n} = d$, and a point $M$ outside of the plane, the shortest distance from $M$ to the plane is $MP$ where $MP$ is perpendicular to the plane, making $P$ a foot of the perpendicular.
+For a plane with equation $\boldsymbol{r} \cdot \boldsymbol{n} = k$, and a point $M$ outside of the plane, the shortest distance from $M$ to the plane is $MP$ where $MP$ is perpendicular to the plane, making $P$ a foot of the perpendicular.
 
 To find the distance $MP$:
 - Find the vector equation of the line with direction vector $n$ through $M$.
@@ -50,13 +50,13 @@ To find the distance $MP$:
 
 Following this gives the formula:
 $$
-D = \frac{|\boldsymbol{b}\cdot\boldsymbol{n}-d|}{|\boldsymbol{n}|}
+D = \frac{|\boldsymbol{b}\cdot\boldsymbol{n}-k|}{|\boldsymbol{n}|}
 $$
 
 **Distance between a point and line**
 The shortest distance between a point $(x_1, y_1)$ and the line with equation $ax+by=c$ is given by:
 $$
-D = \frac{|ax_1+by_1-c|}{\sqrt(a^2 + b^2)}
+D = \frac{|ax_1+by_1-c|}{\sqrt{a^2 + b^2}}
 $$
 This formula is given (don't even bother asking where it comes from).
 
@@ -74,25 +74,7 @@ Consider two parallel lines with direction vectors $\boldsymbol{d}$. For a fixed
 
 > we ran of budget for tikz diagrams so you just have to imagine it.
 
-## Simultaneous Equations and Planes
-#### Two variables
-For **simultaneous linear equations in two variables**, which can be written as $\boldsymbol{M}\boldsymbol{r}=\boldsymbol{a}$, there are three possible cases:
-- One unique solution, when $|\boldsymbol{M}| \not= 0$ (two intersecting lines).
-- Infinitely many solutions, when $|\boldsymbol{M}| = 0$ and the equations are consistent (two overlapping parallel lines).
-- No solutions, when $|\boldsymbol{M}| = 0$ and the equations are not consistent (two non-overlapping parallel lines).
 
-#### Three variables
-For **simultaneous linear equations in three variables**, there are five possible cases:
-- One unique solution, when $|\boldsymbol{M}| \not= 0$ where three planes intersect at a point.
-
-- Infinitely many solutions, when $|\boldsymbol{M}| = 0$ and the equations are consistent, where three planes intersect at a line forming a sheaf.
-
-- No solutions, when $|\boldsymbol{M}| = 0$ and the equations are not consistent.
-	- When three planes are all parallel to each other
-	- When two planes are parallel and one is not
-	- When the planes enclose a triangular prism, with all pairs of planes intersecting at parallel lines.
-
-Two planes are parallel if their normal vectors are parallel (are multiples of each other).
-
+**Footnotes**
 [^1]: **Footnote on skew lines and perpendicularity**
-It is not apparent that such a line segment necessarily exists, but it does for all pairs of skew lines.
+	It is not apparent that such a line segment necessarily exists, but it does for all pairs of skew lines.

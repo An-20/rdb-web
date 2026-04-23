@@ -54,11 +54,8 @@ A visualisation of sections through $z = x^2-y^2$:
 \usetikzlibrary{decorations, decorations.text,backgrounds}
 \usetikzlibrary{positioning}
 
-\newcommand{\labelledpoint}[2]{\node[circle, fill=black,inner sep=2pt,label=45:\color{black}$#2$]at (#1){};}
-
 \begin{document}
-\begin{tikzpicture}[scale=0.8, background rectangle/.style={fill=white, rounded corners=.55cm}, show background rectangle]
-
+\begin{tikzpicture}[scale=0.75]
   \begin{scope}[shift={(0,0)}]
 	  \draw[->] (-3, 0) -- (3, 0) node[right] {$y$};
 	  \draw[->] (0, -3) -- (0, 3) node[above] {$z$};
@@ -72,7 +69,6 @@ A visualisation of sections through $z = x^2-y^2$:
 	  \draw[scale=0.5, domain=-5:5, smooth, variable=\x, black] plot ({\x}, {0.2*\x*\x});
 	  \node[align=left] at (0, -3.5) {$y=0$};
   \end{scope}
-
 \end{tikzpicture}
 \end{document}
 ```
@@ -98,8 +94,7 @@ A visualisation of contours of $z=4x^2+y^2=c$, with $c=1,4,9,16$:
            set layers=my layer set,
     }
 \begin{document}
-\begin{tikzpicture}[scale=0.8, background rectangle/.style={fill=white, rounded corners=.55cm}, show background rectangle]
-
+\begin{tikzpicture}[scale=0.8]
   \begin{scope}[shift={(0,-12)}]
         \begin{axis}[
 	        view={25}{30},
@@ -182,5 +177,6 @@ z = \text{f}(a, b) + (x - a)\text{f}_x(a, b) + (y - b)\text{f}_y(a, b)
 $$
 
 
+**Footnotes**
 [^1]: **Footnote on order of mixed derivatives**
 	This is the order that the textbook insists is correct, whilst the rest of the Internet disagrees. Practically, it doesn't matter as on this course, all functions will likely satisfy the mixed derivative theorem. This may be corrected soon pending further investigation (the author is severely sleep deprived).

@@ -35,23 +35,23 @@ For $a \equiv  b \pmod m$ and $c \equiv d \pmod m$:
 - If $f(x)$ is a polynomial in $x$ with integer coefficients, $f(a) \equiv f(b) \pmod m$.
 - If $a \equiv b \pmod m$ and $a \equiv b \pmod n$ and $m$ and $n$ are coprime, $a \equiv b \pmod{mn}$
 
-Note that **generally division does not work**. But, if $ka \equiv kb \pmod n$, and $hcf(k, n) = 1$, then $a \equiv b \pmod n$. That is, you can divide by a value coprime to the modulo.
+Note that **generally division does not work**. But, if $ka \equiv kb \pmod n$, and $\operatorname{hcf}(k, n) = 1$, then $a \equiv b \pmod n$. That is, you can divide by a value coprime to the modulo.
 
 ###### Solving linear congruences
-A **linear congruence** is an equation of the form $ax \equiv b \pmod n$. It has a solution if and only if $d | b$, where $d = \DeclareMathOperator{hcf}{hcf}\hcf(a, n)$. There are $d$ solutions given by:
+A **linear congruence** is an equation of the form $ax \equiv b \pmod n$. It has a solution if and only if $d | b$, where $d = \operatorname{hcf}(a, n)$. There are $d$ solutions given by:
 $$x_1 + \frac{n}{d} \times r$$
 Where $x_1$ is a solution found by inspection, and $r = 0,1,2,\dots,d-2$[^1].
 
 The conditions for solutions are:
-- If $\hcf(a,n) = 1$, then the congruence has **a unique solution**.
-- If $\hcf(a,n) = d$ and $d$ does not divide $b$, the congruence has **no solutions**.
-- If $\hcf(a,n) = d$ and $d$ does divide $b$, there are $d$ solutions.
+- If $\operatorname{hcf}(a,n) = 1$, then the congruence has **a unique solution**.
+- If $\operatorname{hcf}(a,n) = d$ and $d$ does not divide $b$, the congruence has **no solutions**.
+- If $\operatorname{hcf}(a,n) = d$ and $d$ does divide $b$, there are $d$ solutions.
 
 To **find a solution** $x_1$:
 - If $a \ge n$  or $b \ge n$, replace them with their remainder modulo $n$.
 - To change the sign of either side, both sides can be multiplied by $-1$, or multiples of $n$ added to either side.
 - If $a$ and $b$ have a common factor that is coprime to $n$, this can be cancelled.
-- If $a$, $b$, and $n$ all have a common factor, this can be cancelled (changing the modulo of the congruence). This happens when $\hcf{a,n}|b$.
+- If $a$, $b$, and $n$ all have a common factor, this can be cancelled (changing the modulo of the congruence). This happens when $\operatorname{hcf}(a,n)|b$.
 - Get the coefficient on $x$ to be 1.
 
 ###### Simultaneous linear congruences
@@ -64,7 +64,7 @@ For **two simultaneous linear congruences** to have a solution:
   - $x = k_1n+a$, $x = k_2m + b$
   - Equating gives $k_1n + a = k_2m + b$
   - Rearranging gives $(a - b) = k_1 n - k_2 m$.
-  - The RHS has a factor of $\hcf(m,n)$, so the LHS must as well.
+  - The RHS has a factor of $\operatorname{hcf}(m,n)$, so the LHS must as well.
 
 For **three simultaneous linear congruences** to have a solution:
 - If all three moduli are coprime then there will be a unique solution.
@@ -83,7 +83,7 @@ The **fundamental theorem of arithmetic** states that every integer greater than
 ###### Euclid's lemma
 A pair of integers are **coprime** if they have no common factors other than 1.
 **Euclid's lemma** states that:
-- For any integers $r,a,b$, if $r|ab$ and $\hcf(r,a) = 1$, then $r|b$.
+- For any integers $r,a,b$, if $r|ab$ and $\operatorname{hcf}(r,a) = 1$, then $r|b$.
 - Alternatively, if $p$ is a prime and $p|ab$, $p$ must divide at least one of $a$ or $b$.
 ###### Integer combinations
 An **integer combination** of integers $b$ and $c$ is any integer of form $bx+cy$ for integer values of $m$ and $n$. If $a|b$ and $a|c$, then $a|(bx+cy)$:
@@ -91,9 +91,9 @@ An **integer combination** of integers $b$ and $c$ is any integer of form $bx+cy
 - If $a|c$ then $c = k_2a$ for some $k_2$
 - $bx+cy = k_1a+k_2a = a(k_1+k_2) \implies a|(bx+cy)$
 
-Because $\hcf(b,c)$ is a factor of $b$ and $c$, any integer combination of $b$ and $c$ is a multiple of $\hcf(b,c)$. We can now use this result to prove coprimality.
+Because $\operatorname{hcf}(b,c)$ is a factor of $b$ and $c$, any integer combination of $b$ and $c$ is a multiple of $\operatorname{hcf}(b,c)$. We can now use this result to prove coprimality.
 
-If $bx+cy = 1$ for some $x$ and $y$, then $\hcf(b,c) = 1$, implying $b$ and $c$ are coprime if $bx+cy=1$. The converse is also true:
+If $bx+cy = 1$ for some $x$ and $y$, then $\operatorname{hcf}(b,c) = 1$, implying $b$ and $c$ are coprime if $bx+cy=1$. The converse is also true:
 - Assume $b$ and $c$ are coprime.
 - This means $bx\equiv1\pmod c$ has a unique solution. Suppose this solution is $n$.
 - $bn\equiv1\pmod c \implies bn-1\equiv0\pmod c$. This means $bn-1 = kc$ for some $k$.
@@ -110,12 +110,12 @@ a^p \equiv a \pmod p \quad \text{for prime }p
 $$
 Alternatively, Fermat's Little Theorem also states that for prime $p$ and $a,\,p$ coprime:
 $$
-a^{p-1} \equiv 1 \pmod p \quad \text{for prime }p,\,\hcf(a,p) = 1
+a^{p-1} \equiv 1 \pmod p \quad \text{for prime }p,\,\operatorname{hcf}(a,p) = 1
 $$
 It does not follow that if this result is true that $p$ is necessarily prime. If $x$ is a composite number and this result is true, then $x$ is a pseudo-prime.
 
 ###### Order of $a$ modulo $p$
-The **order of $a$ modulo** $p$ is the smallest integer $n$ such that $a^n \equiv 1 \pmod p$. This only exists if $\hcf(a, p) \equiv 1$ and $a \neq 1$. Fermat's little theorem states that $p-1$ would satisfy this congruence, but $p-1$ is not necessarily the least value of $n$. Also, $n | (p-1)$[^3].
+The **order of $a$ modulo** $p$ is the smallest integer $n$ such that $a^n \equiv 1 \pmod p$. This only exists if $\operatorname{hcf}(a, p) \equiv 1$ and $a \neq 1$. Fermat's little theorem states that $p-1$ would satisfy this congruence, but $p-1$ is not necessarily the least value of $n$. Also, $n | (p-1)$[^3].
 
 ###### The binomial theorem
 The **modular binomial theorem** states that:
@@ -134,11 +134,13 @@ $$
 This coefficient will have a factor of $p$ from the numerator (provided $k \neq 0$ and $k \neq p$). Thus, all the 'middle' terms of the expansion will be congruent to 0 mod $p$, giving the desired result.
 
 
+**Footnotes**
 [^1]: **Footnote on solving linear congruences**
 	Once you have one solution $x_1$ the rest is fairly simple - the whole $\frac{n}{d} \times r$ thing just means adding multiples of $\frac{n}{d}$ to get the other solutions. Try it out a few times, and take a look at the exercises on Integral.
 [^2]: **Footnote on finding highest common factor using $bx+cy$**
-	No proof provided, but its kinda obvious? $bx+cy$ has to have a factor of $\hcf(a,b)$, so the smallest (nonnegative, integer) value of $bx+cy$ is going to be $\hcf(a,b)$ itself.
+	No proof provided, but its kinda obvious? $bx+cy$ has to have a factor of $\operatorname{hcf}(a,b)$, so the smallest (nonnegative, integer) value of $bx+cy$ is going to be $\operatorname{hcf}(a,b)$ itself.
 [^3]: **Footnote on $n$, the order of $a$ modulo $p$ dividing $p - 1$.**
 	This result actually isn't trivial?
 	$a^n \equiv 1 \pmod p$ so $a^{nq} \equiv 1 \pmod p$ for some integer $q$.
-	By Fermat's Little Theorem, $a^{p-1} \equiv 1$ so $nq = p-1$. (this actually isn't fully sound but whatever)
+	By Fermat's Little Theorem, $a^{p-1} \equiv 1$ so $nq = p-1$. (this actually isn't fully sound but whatever).
+	This result also follows from Lagrange's theorem (exponential of $a$ coprime to a modulo $p$ forms a cyclic group).

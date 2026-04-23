@@ -1,4 +1,4 @@
-## Overview
+## Matrices and Basic Operations
 A **matrix** is an array of numbers:
 $$
 \left(\begin{smallmatrix}5 & 1 & -2 \\ 6 & -2 &4\end{smallmatrix}\right)
@@ -55,13 +55,14 @@ Matrix multiplication is **generally associative**; that is, a multiple product 
 
 Matrix multiplication is **not generally commutative**; that is, $\boldsymbol{AB}$ does not generally equal $\boldsymbol{BA}$. However, some matrices will **commute**, which is true when $\boldsymbol{AB} = \boldsymbol{BA}$.
 
+## Determinant and inverse of a 2x2 matrix
 An [[Groups#Definitions|identity]] is an operand that produces no change for a given operation. 
 - For matrix addition, the zero matrix is the identity, because $\boldsymbol{Z} + \boldsymbol{A} = \boldsymbol{A} + \boldsymbol{Z} = \boldsymbol{A}$
 - For matrix multiplication, the identity matrix is the identity, because $\boldsymbol{I}\boldsymbol{A} = \boldsymbol{A}\boldsymbol{I} = \boldsymbol{A}$
 
 A matrix can be thought of as a function that **transforms** a point. An **inverse** matrix can therefore be thought of as an inverse function / transformation that 'undoes' the matrix multiplication.
 
-## Determinant and inverse of a 2x2 matrix
+#### Determinant
 The **determinant** of a matrix determines where it has an inverse. The determinant of a matrix $\boldsymbol{A} = \left(\begin{smallmatrix}a & b \\ c & d\end{smallmatrix}\right)$ is $\det(\boldsymbol{A}) = |\boldsymbol{A}| = ad-bc$
 
 If $\det(\boldsymbol{A}) = 0$, then $\boldsymbol{A}$ is a **singular** matrix, and does not have an inverse.
@@ -71,14 +72,14 @@ Properties of the determinant include:
 - $\det(\boldsymbol{AB}) = \det(\boldsymbol{BA}) = \det(\boldsymbol{A}) \times \det(\boldsymbol{B})$
 - $\det(k\boldsymbol{A}) = k^2\det(\boldsymbol{A})$
 
-
+#### Inverse
 The **inverse** of a $\boldsymbol{A} = \left(\begin{smallmatrix}a & b \\ c & d\end{smallmatrix}\right)$ is denoted as $\boldsymbol{A}^{-1}$ and has the property that:
 $$
 \boldsymbol{A}\boldsymbol{A}^{-1} = \boldsymbol{A}^{-1}\boldsymbol{A} = \boldsymbol{I}
 $$
 The inverse of $\boldsymbol{A}$ where $\det{\boldsymbol{A}} \neq 0$ is:
 $$
-\boldsymbol{A}^{-1} = \frac{1}{\det{\boldsymbol{A}}}\left(\begin{smallmatrix}d & -b \\ -c & a\end{smallmatrix}\right)
+\boldsymbol{A}^{-1} = \frac{1}{\det{\boldsymbol{A}}}\begin{pmatrix}d & -b \\ -c & a\end{pmatrix}
 $$
 
 #### Applications
@@ -102,10 +103,10 @@ $$
 ## Determinant and inverse of a 3x3 matrix
 The **determinant** of a $3 \times 3$ matrix is:
 $$
-\det\left(\begin{smallmatrix}a & b & c \\ d & e & f \\ g & h & i\end{smallmatrix}\right)
-= a \left|\begin{smallmatrix}e & f \\ h & i\end{smallmatrix}\right|
-- b \left|\begin{smallmatrix}d & f \\ g & i\end{smallmatrix}\right|
-+ c \left|\begin{smallmatrix}d & e \\ g & h\end{smallmatrix}\right|
+\det\left(\begin{matrix}a & b & c \\ d & e & f \\ g & h & i\end{matrix}\right)
+= a \left|\begin{matrix}e & f \\ h & i\end{matrix}\right|
+- b \left|\begin{matrix}d & f \\ g & i\end{matrix}\right|
++ c \left|\begin{matrix}d & e \\ g & h\end{matrix}\right|
 $$
 - Each element in a row or column is multiplied by the determinant of the $2 \times 2$ matrix obtained by removing that element's row and column.
 - The middle term has a negative sign (according to the alternating sign matrix below).
@@ -123,5 +124,6 @@ Where $\boldsymbol{C}$ is the **matrix of cofactors**, found by:
 Another method to find the inverse of a $3 \times 3$ matrix is described [[Vectors#Application to 3x3 matrix inverse|in Further Vectors]].
 
 
+**Footnotes**
 [^1]:**Footnote on inverse of a product of matrices**
 	The reason $(\boldsymbol{ABC})^{-1} = \boldsymbol{C}^{-1}\boldsymbol{B}^{-1}\boldsymbol{A}^{-1}$ is because matrix multiplication can be understood as [function composition](https://www.3blue1brown.com/lessons/matrix-multiplication#:~:text=two%20successive%20ones.-,Composition%20is%20Multiplication,-Here%E2%80%99s%20one%20way) - applying one function then the next. With function composition like $f(g(x))$, we read the order of functions from right to left.

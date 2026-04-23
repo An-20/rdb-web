@@ -79,7 +79,7 @@ If the limit does not exist, or is infinite, the improper integral **diverges**.
 
 If the undefined point is **within the range of integration**, then the integral needs to be split into two (for an undefined point $k \in (a, b)$):
 $$
-\int_a^c f(x)\,\textrm{d}x = \lim_{b\to k}\int_a^b f(x)\,\textrm{d}x + \lim_{b\to c}\int_b^c f(x)\,\textrm{d}x
+\int_a^c f(x)\,\textrm{d}x = \lim_{b\to k}\int_a^b f(x)\,\textrm{d}x + \lim_{b\to k}\int_b^c f(x)\,\textrm{d}x
 $$
 If either limit does not exist, or is infinite, the improper integral **diverges**.
 

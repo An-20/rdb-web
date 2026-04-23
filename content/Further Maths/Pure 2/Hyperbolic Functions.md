@@ -56,7 +56,7 @@ From these graphs, the domain and range of the hyperbolic functions can be found
 - $\tanh x$ has a domain of $x \in \mathbb{R}$, range of $-1 \lt \tanh x \lt 1$.
 
 #### Inverse hyperbolic functions
-The **inverse hyperbolic functions** are $\DeclareMathOperator{arsinh}{arsinh}\arsinh x$, $\DeclareMathOperator{arcosh}{arcosh}\arcosh x$, and $\DeclareMathOperator{artanh}{artanh}\artanh x$, also denoted $\sinh^{-1}x, \cosh^{-1}x$ and $\tanh^{-1} x$ respectively.
+The **inverse hyperbolic functions** are $\operatorname{arsinh} x$, $\operatorname{arcosh} x$, and $\operatorname{artanh} x$, also denoted $\sinh^{-1}x, \cosh^{-1}x$ and $\tanh^{-1} x$ respectively.
 ```tikz
 \usepackage{tikz}
 \begin{document}
@@ -98,14 +98,14 @@ The **inverse hyperbolic functions** are $\DeclareMathOperator{arsinh}{arsinh}\a
 \end{document}
 ```
 The domains and ranges can be found:
-- $\DeclareMathOperator{arsinh}{arsinh}\arsinh x$ has a domain of $x \in \mathbb{R}$, range of $\DeclareMathOperator{arsinh}{arsinh}\arsinh x \in \mathbb{R}$.
-- $\DeclareMathOperator{arcosh}{arcosh}\arcosh x$ has a domain of $x \ge 1$, range of $\DeclareMathOperator{arcosh}{arcosh}\arcosh x \ge 0$.
-- $\DeclareMathOperator{artanh}{artanh}\artanh x$ has a domain of $-1 \lt x \lt 1$, range of $\DeclareMathOperator{artanh}{artanh}\artanh x \in \mathbb{R}$.
+- $\operatorname{arsinh}x$ has a domain of $x \in \mathbb{R}$, range of $\operatorname{arsinh} x \in \mathbb{R}$.
+- $\operatorname{arcosh}x$ has a domain of $x \ge 1$, range of $\operatorname{arcosh}x \ge 0$.
+- $\operatorname{artanh} x$ has a domain of $-1 \lt x \lt 1$, range of $\operatorname{artanh} x \in \mathbb{R}$.
 
 The inverse hyperbolic functions have **logarithmic forms** that can be proved by using the exponential definition of the hyperbolic functions and solving the hidden quadratic. These are:
-- $\DeclareMathOperator{arsinh}{arsinh}\arsinh x = \ln(x + \sqrt{x^2+1})$
-- $\DeclareMathOperator{arcosh}{arcosh}\arcosh x = \ln(x + \sqrt{x^2-1})$
-- $\DeclareMathOperator{artanh}{artanh}\artanh x = \frac{1}{2}\ln(\frac{1+x}{1-x})$
+- $\operatorname{arsinh} x = \ln(x + \sqrt{x^2+1})$
+- $\operatorname{arcosh} x = \ln(x + \sqrt{x^2-1})$
+- $\operatorname{artanh} x = \frac{1}{2}\ln\left(\frac{1+x}{1-x}\right)$
 These are given in the formula book. Proofs are given below.
 
 #### Hyperbolic identities

@@ -2,7 +2,7 @@
 title: RDB Web - Index
 ---
 Welcome to RDB Web, a work-in-progress putting [VKSL](https://vksl.uk) RDB on the web.
-![VKSL Logo|500x500](assets/logo.svg)
+![VKSL Logo|300x300](assets/logo.svg)
 
 Looking for [VKSL STUDIOS](https://vksl.uk)?
 See anything wrong? [Fix it (on GitHub)](https://github.com/An-20/rdb-web/), or [let us know](https://vksl.uk/feedback) (on the `vksl.uk` feedback form). A changelog for RDB is available at the bottom of this page.
@@ -11,72 +11,93 @@ New to RDB are **spec tags**: *IS*, and *NIS*, which stand for 'In Spec' and 'No
 
 #### Computer Science
 These notes are written following the [AQA 7517 Specification](https://filestore.aqa.org.uk/resources/computing/specifications/AQA-7516-7517-SP-2015.PDF).
+- [[Algorithms]]
+- [[Theory of Computation]]
+- [[Computer Architecture]]
+- [[Data Structures]]
+- [[Networks]]
+- [[Data Representation]]
+- [[Databases]]
+- [[Big Data]]
+- [[Functional Programming]]
 
-[[Algorithms]]
-[[Theory of Computation]]
-[[Computer Architecture]]
-[[Data Structures]]
-[[Networks]]
-[[Data Representation]]
-[[Databases]]
-[[Big Data]]
-[[Functional Programming]]
+#### Maths
+These notes are written following the [OCR H245 Specification](https://www.ocr.org.uk/Images/308723-specification-accredited-a-level-gce-mathematics-a-h240.pdf).
+
+**Pure**
+- [[Pure Year 1 Overview]]
+- [[Pure Year 2 Overview]]
+- [[Algebra]]
+- [[Differentiation]]
+- [[Exponentials and Logarithms]]
+- [[Functions]]
+- [[Integration]]
+- [[Numerical Methods]]
+- [[Proof]]
+- [[Maths/Pure/Sequences and Series|Sequences and Series]]
+- [[Trigonometry]]
+
+**Statistics**
+- [[Distributions and Hypothesis Testing]]
+- [[Probability]]
+- [[Sampling]]
 
 #### Further Maths
 These notes are written following the [OCR H245 Specification](https://ocr.org.uk/Images/308752-specification-accredited-a-level-gce-further-mathematics-a-h245.pdf)
 
 **Pure Core 1**
-[[Matrices]]
-[[Vectors]]
-[[Matrices Applications]]
-[[Complex Numbers]]
-[[Roots of Polynomials]]
+- [[Matrices]]
+- [[Vectors]]
+- [[Matrices Applications]]
+- [[Complex Numbers]]
+- [[Roots of Polynomials]]
 
 **Pure Core 2**
-[[Series and Induction]]
-[[Further Complex Numbers]]
-[[Further Complex Numbers and Trigonometry]]
-[[Planes]]
-[[Hyperbolic Functions]]
-[[Further Calculus]]
-[[Further Calculus Applications]]
-[[Polar Coordinates]]
-[[Differential Equations]]
-[[Differential Equations Applications]]
+- [[Series and Induction]]
+- [[Further Complex Numbers]]
+- [[Further Complex Numbers and Trigonometry]]
+- [[Planes]]
+- [[Hyperbolic Functions]]
+- [[Further Calculus]]
+- [[Further Calculus Applications]]
+- [[Polar Coordinates]]
+- [[Differential Equations]]
+- [[Differential Equations Applications]]
 
 **Mechanics**
-[[Dimensional Analysis]]
-[[Momentum, Impulse, and Circular Motion]]
-[[Work, Energy, and Power]]
+- [[Dimensional Analysis]]
+- [[Momentum, Impulse, and Circular Motion]]
+- [[Work, Energy, and Power]]
 
 **Additional Pure**
-[[Sequences and Series]]
-[[Number Theory]]
-[[Groups]]
-[[Further Vectors]]
-[[Surfaces and Partial Differentiation]]
+- [[Further Sequences and Series|Further Sequences and Series]]
+- [[Number Theory]]
+- [[Groups]]
+- [[Further Vectors]]
+- [[Surfaces and Partial Differentiation]]
+- [[Additional Further Calculus]]
 
 #### Physics
 
 These notes are written following the [OCR H557 Specification](https://ocr.org.uk/Images/171729-specification-accredited-a-level-gce-physics-b-advancing-physics-h557.pdf).
 
 **Year 1**
-[[Forces and Motion]]
-[[Imaging and Signalling]]
-[[Waves]]
-[[Materials]]
-[[Quantum]]
-[[Sensing]]
+- [[Forces and Motion]]
+- [[Imaging and Signalling]]
+- [[Waves]]
+- [[Materials]]
+- [[Quantum]]
+- [[Sensing]]
 
 **Year 2**
-[[Electromagnetism]]
-[[Our Place in the Universe]]
-[[Out into Space]]
-[[Radioactive Decay and Capacitor Discharge]]
-[[Simple Harmonic Motion]]
-[[Simple Models of Matter and Boltzmann Factor]]
-[[Charge and Field]]
-[[Probing and Ionising]]
+- [[Electromagnetism]]
+- [[Our Place in the Universe]]
+- [[Out into Space]]
+- [[Radioactive Decay and Capacitor Discharge]]
+- [[Simple Harmonic Motion]]
+- [[Simple Models of Matter and Boltzmann Factor]]
+- [[Charge and Field]]
+- [[Probing and Ionising]]
 
 #### Using RDB Web
 RDB Web may take a while to load initially, or may load with the incorrect theme. Refreshing the page should resolve any issues. 
