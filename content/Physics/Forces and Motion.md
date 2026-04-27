@@ -6,7 +6,7 @@
 \usetikzlibrary{positioning}
 \begin{document}
 \pagestyle{empty}
-\begin{tikzpicture}[background rectangle/.style={fill=white, rounded corners=.55cm}, show background rectangle]
+\begin{tikzpicture}
 	\coordinate[label=below:$$](A) at (0, 0);
 	\coordinate[label=below:$$](B) at (4, 0);
 	\coordinate[label=right:$$](C) at (4, 2);
@@ -64,8 +64,7 @@ The time to maximum height (where the vertical velocity is zero) is exactly half
 \newcommand{\labelledpoint}[2]{\node[circle, fill=black,inner sep=2pt,label=45:\color{black}$#2$]at (#1){};}
 
 \begin{document}
-\begin{tikzpicture}[background rectangle/.style={fill=white, rounded corners=.55cm}, show background rectangle]
-
+\begin{tikzpicture}
   \coordinate[label=below:$A$](A) at (-2.5, -1.25);
   \coordinate[label=below:$B$](B) at (2.5, -1.25);
   \coordinate[label=below:$M$](M) at (0, -1.25);

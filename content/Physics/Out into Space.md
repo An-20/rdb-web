@@ -74,6 +74,62 @@ $$
 - $E_\text{grav} = \int F_\text{grav}\,\text{d}{r}$: energy is given by area under force-distance graph between two distances.
 - $V_\text{grav} = \int g\,\text{d}{r}$: potential is given by area under field strength-distance graph between two distances.
 
+The below graphs show the four different field values.
+```tikz
+\usepackage{amsmath}
+
+\begin{document}
+\begin{tikzpicture}[>=stealth]
+
+\def\HSPACE{7}
+\def\VSPACE{5}
+\def\W{5.5}
+\def\YMAX{2}
+\def\YMIN{-2}
+
+\tikzset{
+    mainplot/.style={very thick, red!80!black, line cap=round},
+    axisline/.style={->},
+    eqnode/.style={anchor=north east}
+}
+
+\begin{scope}[shift={(0,0)}]
+    \draw[axisline] (-0.25,0) -- (\W,0) node[right] {$r$};
+    \draw[axisline] (0,\YMIN) -- (0,\YMAX) node[above] {$F_g$};
+    
+    \draw[mainplot, domain=0.77:5, samples=100] plot (\x, {1.2/(\x*\x)});
+    \node[eqnode] at (\W, \YMAX) {$F_g = \frac{GMm}{r^2}$};
+\end{scope}
+
+\begin{scope}[shift={(\HSPACE,0)}]
+    \draw[axisline] (-0.25,0) -- (\W,0) node[right] {$r$};
+    \draw[axisline] (0,\YMIN) -- (0,\YMAX) node[above] {$U$};
+    
+    \draw[mainplot, domain=0.5:5, samples=100] plot (\x, {-1/\x});
+    \node[eqnode] at (\W, \YMAX) {$U = -\frac{GMm}{r}$};
+\end{scope}
+
+\begin{scope}[shift={(0,-\VSPACE)}]
+    \draw[axisline] (-0.25,0) -- (\W,0) node[right] {$r$};
+    \draw[axisline] (0,\YMIN) -- (0,\YMAX) node[above] {$g$};
+    
+    \draw[mainplot, domain=0.77:5, samples=100] plot (\x, {1.2/(\x*\x)});
+    \node[eqnode] at (\W, \YMAX) {$g = \frac{GM}{r^2}$};
+\end{scope}
+
+\begin{scope}[shift={(\HSPACE,-\VSPACE)}]
+    \draw[axisline] (-0.25,0) -- (\W,0) node[right] {$r$};
+    \draw[axisline] (0,\YMIN) -- (0,\YMAX) node[above] {$V$};
+    
+    \draw[mainplot, domain=0.5:5, samples=100] plot (\x, {-1/\x});
+    \node[eqnode] at (\W, \YMAX) {$V = -\frac{GM}{r}$};
+\end{scope}
+
+\end{tikzpicture}
+\end{document}
+```
+
+
 ###### Uniform gravitational fields
 A **uniform gravitational field** is a region where the gravitational force is constant in both magnitude and direction at all points. This can be used to approximate a gravitational field near the surface of a large body e.g. Earth, where the field is almost constant over small distances.
 

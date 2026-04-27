@@ -15,7 +15,28 @@ The intensity of light does not cause higher energy electrons (energy doesn't ac
 The energy of the emitted electrons depends on the frequency of the light. The frequency must be above the **threshold frequency** for electrons to be emitted. The corresponding energy, the **work function**, is the amount of energy needed to liberate electrons from the surface of the metal.
 ###### Energy of photoelectrons
 $$E = hf - \phi$$
-Where $h$ is Planck's constant, $f$ is frequency, and $\phi$ is the work function.
+Where $h$ is Planck's constant, $f$ is frequency, and $\phi$ is the work function. This is shown in the graph below.
+```tikz
+\begin{document}
+\begin{tikzpicture}[>=stealth]
+    \draw[->, thick] (-0.5,0) -- (6,0) node[right] {$f$};
+    \draw[->, thick] (0,-0.5) -- (0,4.5) node[above] {$E$};
+
+    \node[below left] at (0,0) {$0$};
+
+    \coordinate (f0) at (2,0);
+    \filldraw (f0) circle (1.5pt);
+    \node[below] at (2,0) {$f_0$};
+    
+    \draw[red, thick] (f0) -- (5.5,4) node[pos=0.6, sloped, above] {$E = hf - \phi$};
+
+    \draw (4,2.2) -- (5,2.2) node[midway, below] {$\Delta f$};
+    \draw (5,2.2) -- (5,3.3);
+    \node[right] at (5, 2.75) {$\Delta E$};
+    \node[above right] at (5.2, 3) {$h = \frac{\Delta E}{\Delta f}$};
+\end{tikzpicture}
+\end{document}
+```
 
 #### Light-emitting diodes
 In a **light-emitting diode** (LED), there is a one-to-one interaction between electrons and photons. A single photon is emitted when a electron loses energy ('falling across a band gap'). As shown by the [[Sensing#I-V, resistance, and conductance graphs|I-V graph]] of a diode, it only begins conducting above a certain voltage. This voltage corresponds to the energy per electron being sufficient to produce a photon with that amount of energy. Similar to the photoelectric effect, it is the voltage, and not current, which matters, because light is formed of quanta.

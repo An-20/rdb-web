@@ -1,5 +1,5 @@
 #### De Moivre's theorem
-In Pure 1, the modulus-argument form of a complex number was introduced, with multiplication of two complex numbers involving multiplying their moduli and adding their arguments. Repeating this process give's **De Moivre's Theorem**:
+In [[Complex Numbers|Pure 1]], the modulus-argument form of a complex number was introduced, with multiplication of two complex numbers involving multiplying their moduli and adding their arguments. Repeating this process give's **De Moivre's theorem**:
 $$
 z^n = (r(\cos\theta + i\sin\theta))^n = r^n(\cos n\theta + i\sin n\theta)
 $$
@@ -10,11 +10,11 @@ This is true for any integer power $n$, and can be shown by proof by induction.
 $$
 e^{i\theta} = \cos\theta + i \sin\theta
 $$
-While the textbook claims "it makes no sense to ask why it is true or how to prove it", we leave a proof in the footnotes using Maclaurin series.
+While the textbook claims "it makes no sense to ask why it is true or how to prove it", we leave a proof in the footnotes using Maclaurin series^[^1].
 
-Euler's formula also gives a new way of writing complex numbers:
+Euler's formula also gives a new way of writing complex numbers with a modulus and argument, known as **exponential form**:
 $$
-re^{i\theta} = r(\cos\theta + i\sin\theta) = r\cis\theta = [r, \theta]
+re^{i\theta} = r(\cos\theta + i\sin\theta) = r\operatorname{cis}\theta = [r, \theta]
 $$
 The **complex conjugate** of $z = re^{i\theta}$ is $re^{-i\theta}$:
 $$
@@ -30,7 +30,38 @@ De Moivre's theorem can also be used to find roots of complex numbers, to solve 
 - Compare arguments, adding $2\pi$ to generate all solutions
 - Write the $n$ different roots in modulus-argument form.
 
-The roots of $z^n = w$ form a regular $n$-gon with a circumcircle centred on the origin.
+The roots of $z^n = w$ form a regular $n$-gon with a circumcircle centred on the origin:
+```tikz
+\usetikzlibrary{shapes.geometric, arrows.meta}
+
+\begin{document}
+\begin{tikzpicture}
+    \def\n{6}
+    \def\radius{2}
+    \def\angleoffset{30}
+
+    \draw[-{Stealth}] (-2.5,0) -- (2.5,0) node[right] {Re};
+    \draw[-{Stealth}] (0,-2.5) -- (0,2.5) node[above] {Im};
+
+    \draw[dashed] (0,0) circle (\radius);
+    \node[below left] at (40:\radius+2) {$z^6 = -8 = 8e^{i\pi}$};
+
+    \node[regular polygon, regular polygon sides=\n, minimum size=2*\radius cm, draw=black, thick, rotate=\angleoffset] (hexagon) at (0,0) {};
+
+    \foreach \i in {1,...,\n} {
+        \pgfmathsetmacro{\angle}{\angleoffset + (\i-1)*360/\n}
+        \filldraw[red] (\angle:\radius) circle (2pt);
+        \draw[dotted] (0,0) -- (\angle:\radius);
+        \node at (\angle+6:\radius + 0.3) {$z_{\the\numexpr\i-1\relax}$};
+    }
+
+    \draw[bend right, ->, red] (\angleoffset:1) arc (\angleoffset:\angleoffset+60:1);
+    \node[red] at (\angleoffset+30:1.5) {$\frac{2\pi}{6}$};
+
+    \node[below left] at (0,0) {$0$};
+\end{tikzpicture}
+\end{document}
+```
 
 The **roots of unity** are $z$ such that $z^n = 1$. There are $n$ $n$th roots of unity, each with modulus 1 and differing by an argument of $\frac{2\pi}{n}$. The roots of unity are:
 $$
@@ -44,12 +75,12 @@ There are symmetries of the roots of unity that can be applied, e.g. many are co
 
 #### Further factorising
 $$
-(z-w)(z-w^*) = z^2 - 2z\Re{w} + |w|^2
+(z-w)(z-w^*) = z^2 - 2z\operatorname{Re}(w) + |w|^2
 $$
-This can be used to factorise expressions of the form $z^n+c$.
+This can be used to factorise expressions of the form $z^n+c$, as many roots will occur in conjugate pairs, which form irreducible quadratic factors.
 
 #### Geometry of complex numbers
-**Multiplication** by $r\operatorname{cis}\theta$ corresponds to a rotation about the origin through angle $\theta$ and an enlargement by scale factor $r$.
+**Multiplication** by $r\operatorname{cis}\theta$ corresponds to a rotation about the origin through angle $\theta$ (measured anticlockwise) and an enlargement by scale factor $r$.
 
 **Division** by $r\operatorname{cis}\theta$ corresponds to a rotation about the origin through angle $-\theta$ and an enlargement by scale factor $\frac{1}{r}$.
 
@@ -102,3 +133,6 @@ $$
 \end{split}
 $$
 Proving Euler's formula.
+
+[^1]: **Footnote on Euler's formula as a definition**
+	Debating whether Euler's formula is a definition or a result that can be derived from other results such as Maclaurin series is pointless. Regardless, taking the Maclaurin series as the 'primary' axiomatic definition of $e^x$, $\sin x$, and $\cos x$, and plugging complex numbers in, Euler's formula can be derived.

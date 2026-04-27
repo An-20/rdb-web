@@ -15,7 +15,7 @@ This equation describes a spring-mass system where $x$ is the displacement from 
 
     \draw [decoration={aspect=0.3, segment length=2mm, amplitude=3mm, coil}, decorate] (0,0) -- (0,-3.5) node[midway, right=10pt] {$k$};
 
-    \node [draw, circle, minimum size=0.1cm, fill=black!20, inner sep=0pt] (mass) at (0,-3.65) {$m$};
+    \node [draw, circle, minimum size=0.4cm, fill=black!20, inner sep=0pt] (mass) at (0,-3.65) {};
 
     \draw [dashed] (-1.5, -2.5) -- (1.5, -2.5) node[right] {Equilibrium ($x=0$)};
     \draw [|-|] (1.2, -2.5) -- (1.2, -3.6) node[midway, right] {$x$};
@@ -53,7 +53,7 @@ Where $A$ is the **amplitude** and $\omega$ is the **angular frequency**, such t
 
 \tikzstyle{axis} = [->, thick]
 \tikzstyle{label} = []
-\tikzstyle{curve} = [ultra thick, samples=50]
+\tikzstyle{curve} = [thick, samples=50]
 \tikzstyle{continue} = [thick, dashed, samples=50]
 
 % sin
@@ -131,7 +131,7 @@ These relationships are shown on the graph below, where the left graph shows $x$
 
 \tikzstyle{axis} = [->, thick]
 \tikzstyle{label} = []
-\tikzstyle{curve} = [ultra thick, samples=50]
+\tikzstyle{curve} = [thick, samples=50]
 \tikzstyle{continue} = [thick, dashed, samples=50]
 
 % sin
@@ -207,6 +207,46 @@ $$
 E = \frac{1}{2}kx^2
 $$
 
+By considering the conservation of energy, a graph of potential and kinetic energy against displacement, $x$, can be plotted:
+```tikz
+\begin{document}
+\begin{tikzpicture}[>=stealth]
+
+\tikzset{
+    axis/.style={->, thick},
+    label_text/.style={black, font=\small},
+    curve_pe/.style={blue, thick, samples=100},
+    curve_ke/.style={red, thick, samples=100},
+    guide/.style={dashed, thin},
+}
+
+\def\PlotW{3}
+\def\PlotH{3} 
+
+\begin{scope}
+    \draw[axis] (-\PlotW - 0.5, 0) -- (\PlotW + 0.5, 0) node[right, label_text] {$x$};
+    \draw[axis] (0, 0) -- (0, \PlotH + 0.5) node[above, label_text] {$E$};
+
+    \draw[curve_pe, domain=-\PlotW:\PlotW] plot (\x, {(\PlotH/(\PlotW^2))*(\x)^2});
+    
+    \draw[curve_ke, domain=-\PlotW:\PlotW] plot (\x, {\PlotH - (\PlotH/(\PlotW^2))*(\x)^2});
+
+    \draw[guide] (-\PlotW, \PlotH) -- (\PlotW, \PlotH) node[right, label_text, black] {$E_{total}$};
+
+    \draw (\PlotW, 0.1) -- (\PlotW, -0.1) node[below, label_text] {$+A$};
+    \draw (-\PlotW, 0.1) -- (-\PlotW, -0.1) node[below, label_text] {$-A$};
+    \node[below left, font=\small] at (0,0) {$0$};
+
+    \node[blue, anchor=west] at (1.5, 0.6) {$E_p$};
+    \node[red, anchor=west] at (1.5, 2.5) {$E_k$};
+    \node[anchor=north, font=\footnotesize, align=center] at (0, -1) {
+        $E_{total} = E_k + E_p$
+    };
+\end{scope}
+\end{tikzpicture}
+\end{document}
+```
+
 #### Free, forced, and damped vibrations
 **Free oscillations** have constant amplitude, when a system oscillates at its **natural frequency**. When an external **periodic driving force** is added, **forced oscillations** occur.
 
@@ -271,18 +311,19 @@ The degree of damping affects how much resonance is observed. Generally, the res
 
 % right
 \begin{scope}[xshift=7cm]
-	\node[anchor=south west, font=\footnotesize, align=center] at (0, -1.5) {
+	\node[anchor=south west, font=\footnotesize, align=center] at (0, -1.8) {
 		\textbf{High damping}\\
-		Smaller response, broader peak.
+		Smaller response, broader peak\\
+		at lower frequency.
 	};
 
 	\draw[axis] (0,0) -- (0, \PlotH + 0.5) node[above, label_text] {$A/A_0$};
 	\draw[axis] (0,0) -- (\PlotW + 0.5, 0) node[right, label_text] {$f/f_0$};
 
-	\draw[curve, domain=0:\PlotW] plot (\x, {(\PlotH/2) / (1 + 4*((\x/2)-1)^2)});
-	\draw[guide] (2,0) -- (2, \PlotH/2);
-    \draw[guide] (0, \PlotH/2) -- (2, \PlotH/2);
-	\draw (2, 0.1) -- (2, -0.1) node[below] {1.0};
+	\draw[curve, domain=0:\PlotW] plot (\x, {(\PlotH/2) / (1 + 4*((\x/2)-0.8)^2)});
+	\draw[guide] (1.6,0) -- (1.6, \PlotH/2);
+    \draw[guide] (0, \PlotH/2) -- (1.6, \PlotH/2);
+	\draw (1.6, 0.1) -- (1.6, -0.1) node[below] {0.8};
 	\draw (0.1, \PlotH/2) -- (-0.1, \PlotH/2) node[left] {2};
 \end{scope}
 \end{tikzpicture}

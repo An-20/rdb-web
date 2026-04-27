@@ -27,3 +27,55 @@ The operation **functional composition** combines two functions to get a new fun
 For all three of these higher-order functions, the function argument comes first, and the list argument comes second.
 
 A list has a **head** and a **tail**, where the head is the first item in the list, and a tail is the remainder of the list, written as `head:tail` in Haskell. The head is a list element, while the tail is a list itself. `4:[3, 5]` would represent a list with head 4 and tail `[3, 5]`. A list can also be empty.
+
+#### Haskell
+Functions in Haskell:
+```hrepl
+add :: Integer -> Integer -> Integer
+add x y = x + y
+add 6 7  -- outputs 13
+```
+
+Partial function application in Haskell:
+```hrepl
+add :: Integer -> Integer -> Integer
+add x y = x + y
+add3 :: Integer -> Integer
+add3 = add 3
+add3 4  -- outputs 7
+```
+
+Function composition:
+```hrepl
+add3 :: Integer -> Integer
+add3 x = x + 3
+square :: Integer -> Integer
+square x = x * x
+(add3 . square) 8  -- outputs 67
+```
+
+Map:
+```hrepl
+triple :: Integer -> Integer
+triple x = 3 * x
+map triple [1, 2, 3]  -- outputs [3, 6, 9]
+```
+
+Filter:
+```hrepl
+isBig :: Integer -> Bool
+isBig x = x >= 5
+filter isBig [2, 4, 6, 8]  -- outputs [6, 8]
+```
+
+Fold:
+```hrepl
+multiply :: Integer -> Integer -> Integer
+multiply x y = x * y
+foldr multiply [1, 2, 3, 4]  -- outputs 24
+```
+
+just for fun, a python widget!
+```pyrepl
+print("hello, world!")
+```
