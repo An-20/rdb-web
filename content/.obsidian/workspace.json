@@ -11,10 +11,14 @@
             "id": "6e2dd30b692c33dd",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Physics/Charge and Field.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Charge and Field"
             }
           }
         ]
@@ -109,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Further Maths/Groups.md",
-                "linksCollapsed": false,
+                "file": "Physics/Charge and Field.md",
+                "linksCollapsed": true,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Groups"
+              "title": "Outgoing links from Charge and Field"
             }
           },
           {
@@ -138,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md",
+                "file": "Physics/Charge and Field.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline of Charge and Field"
             }
           },
           {
@@ -162,7 +166,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -183,32 +187,32 @@
   },
   "active": "6e2dd30b692c33dd",
   "lastOpenFiles": [
-    "Computer Science/Theory of Computation.md",
-    "Further Maths/Pure 2/Further Complex Numbers.md",
-    "Further Maths/Pure 2/Planes.md",
     "Physics/Out into Space.md",
+    "Physics/Charge and Field.md",
+    "Physics/Sensing.md",
+    "index.md",
+    "Physics/Waves.md",
+    "Physics/Simple Models of Matter and Boltzmann Factor.md",
+    "Physics/Simple Harmonic Motion.md",
+    "Physics/Radioactive Decay and Capacitor Discharge.md",
     "Physics/Quantum.md",
     "Physics/Probing and Ionising.md",
+    "Physics/Our Place in the Universe.md",
+    "Physics/Materials.md",
     "Physics/Imaging and Signalling.md",
     "Physics/Forces and Motion.md",
-    "Physics/Our Place in the Universe.md",
-    "Physics/Sensing.md",
-    "Physics/Simple Models of Matter and Boltzmann Factor.md",
-    "Physics/Radioactive Decay and Capacitor Discharge.md",
-    "Computer Science/Functional Programming.md",
-    "Physics/Simple Harmonic Motion.md",
-    "Further Maths/Pure 2/Series and Induction.md",
-    "Further Maths/Pure 2/Differential Equations Applications.md",
-    "Further Maths/Pure 2/Differential Equations.md",
-    "Further Maths/Pure 1/Matrices Applications.md",
-    "Physics/Charge and Field.md",
+    "Physics/Electromagnetism.md",
     "Maths/Statistics/Sampling.md",
+    "Maths/Statistics/Probability.md",
     "Maths/Statistics/Distributions and Hypothesis Testing.md",
     "Maths/Pure/Trigonometry.md",
     "Maths/Pure/Sequences and Series.md",
+    "Maths/Pure/Pure Year 2 Overview.md",
+    "Maths/Pure/Pure Year 1 Overview.md",
+    "Maths/Pure/Proof.md",
+    "Maths/Pure/Numerical Methods.md",
     "Maths/Pure/Integration.md",
     "Maths/Pure/Functions.md",
-    "Maths/Pure/Exponentials and Logarithms.md",
     "Maths/Pure",
     "Maths/Statistics",
     "Maths",

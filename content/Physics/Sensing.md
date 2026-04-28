@@ -11,7 +11,7 @@ $$
 Potential difference is the difference in energy per unit change from one point in a circuit to another. p.d. is measured in Volts ($\text{V}$) using a voltmeter. Conceptually, **p.d.** is the energy per unit charge transferred from electrical energy to other forms of energy, whilst **e.m.f** (electromotive force) is the energy per unit charge transferred into electrical energy from other forms of energy.
 
 #### Resistance
-**Resistance** is opposition to the flow of charge. It is measured in Ohms ($\ohm$). **Ohm's Law** states that (for Ohmic components):
+**Resistance** is opposition to the flow of charge. It is measured in Ohms ($\Omega$). **Ohm's Law** states that (for Ohmic components):
 $$
 V = IR
 ​$$
@@ -34,26 +34,31 @@ Where:
 - $e$ is the charge on each charge carrier, in $\mathrm{C}$.
 
 #### Conductance
-**Conductance** is the amount of current that flows through a component for each volt of p.d. applied across it. It is the reciprocal of resistance, and is measured in **Siemens** ($\mathrm{S}$). Ohm's law with conductance is $I = VG$.
+**Conductance** is the amount of current that flows through a component for each volt of p.d. applied across it. It is the reciprocal of resistance, and is measured in **Siemens** ($\mathrm{S}$). Ohm's law with conductance is given by:
+$$
+I = VG
+$$
+
 ##### Resistance and conductance rules
 For components in parallel, the voltage across each component is the same:
 $$
-\begin{split}
-G_1 &= \frac{I_1}{V_1},&&G_2 &&= \frac{I_2}{V_2},&&\cdots,\,\,\, G_n &&= \frac{I_n}{V_n} \\
-I_1 &= V_1G_1,\,\,\,&& I_2 &&= V_2G_2,\,\,\,&&\cdots,\,\,\,I_n &&= V_nG_n \\
-I_t &= V_1G_1 && &&+ V_2G_2 &&\cdots\,\,\,&&+ V_nG_n \\
-I_t &= V(G_1 && &&+ G_2 &&\cdots\,\,\,&&+ G_n) \\
-\end{split}
+\begin{aligned}
+G_1 &= \frac{I_1}{V_1},&&G_2 &&= \frac{I_2}{V_2},&&\cdots, G_n &&= \frac{I_n}{V_n} \\
+I_1 &= V_1G_1,&& I_2 &&= V_2G_2,&&\cdots,I_n &&= V_nG_n \\
+I_t &= V_1G_1 && &&+ V_2G_2 &&\cdots&&+ V_nG_n \\
+I_t &= V(G_1 && &&+ G_2 &&\cdots&&+ G_n) \\
+\end{aligned}
 $$
+
 Giving the general rule that **conductances in parallel sum**. As conductance is the reciprocal of resistance, this gives the $\frac{1}{R_t} = \frac{1}{R_1} + \frac{1}{R_2} + \dots + \frac{1}{R_n}$ rule.
 
 For components in series, the current through each component is the same:
 $$
-\begin{split}
+\begin{aligned}
 G_1 &= \frac{I_1}{V_1},&&G_2 &&= \frac{I_2}{V_2},&&\cdots,\,\,\, G_n &&= \frac{I_n}{V_n} \\
 V_1 &= \frac{I_1}{G_1},\,\,\,&& V_2 &&= \frac{I_2}{G_2},\,\,\,&&\cdots,\,\,\,V_n &&= \frac{I_n}{G_n} \\
 V_T &= \frac{I_1}{G_1} &&&&+ \frac{I_2}{G_2}\,\,\,&&\cdots \,\,\,&&+ \frac{I_n}{G_n} \\
-\end{split}
+\end{aligned}
 $$
 Considering equal currents gives:
 $$
@@ -351,3 +356,8 @@ The below graphs show how resistance and conductance vary against temperature fo
 \end{tikzpicture}
 \end{document}
 ```
+
+##### Electrical behaviour of materials
+- Metals are conductive and carry large currents for a given voltage, as they have a high number of mobile charge carriers.
+- Insulators have few (or no) mobile charge carriers, so they are not conductive.
+- Semiconductors have a varying number of mobile charge carriers, as described above.

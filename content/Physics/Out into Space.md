@@ -1,4 +1,4 @@
-#### Circular Motion
+#### Circular motion
 An object moving in a circle is constantly accelerating towards the centre due to a **centripetal force**, which acts at right angles to the motion of the object. For an object moving in a **horizontal circular** path of radius $r$ m, and at a constant angular velocity of $\omega\,\text{rad\,s}^{-1}$:
 - The **linear speed** is given by $v = r\omega$
 - The **acceleration towards the centre** is given by $a = v\omega = r\omega^2 = \frac{v^2}{r}$
@@ -97,8 +97,8 @@ The below graphs show the four different field values.
     \draw[axisline] (-0.25,0) -- (\W,0) node[right] {$r$};
     \draw[axisline] (0,\YMIN) -- (0,\YMAX) node[above] {$F_g$};
     
-    \draw[mainplot, domain=0.77:5, samples=100] plot (\x, {1.2/(\x*\x)});
-    \node[eqnode] at (\W, \YMAX) {$F_g = \frac{GMm}{r^2}$};
+    \draw[mainplot, domain=0.77:5, samples=100] plot (\x, {-1.2/(\x*\x)});
+    \node[eqnode] at (\W, \YMAX) {$F_g = -\frac{GMm}{r^2}$};
 \end{scope}
 
 \begin{scope}[shift={(\HSPACE,0)}]
@@ -113,8 +113,8 @@ The below graphs show the four different field values.
     \draw[axisline] (-0.25,0) -- (\W,0) node[right] {$r$};
     \draw[axisline] (0,\YMIN) -- (0,\YMAX) node[above] {$g$};
     
-    \draw[mainplot, domain=0.77:5, samples=100] plot (\x, {1.2/(\x*\x)});
-    \node[eqnode] at (\W, \YMAX) {$g = \frac{GM}{r^2}$};
+    \draw[mainplot, domain=0.77:5, samples=100] plot (\x, {-1.2/(\x*\x)});
+    \node[eqnode] at (\W, \YMAX) {$g = -\frac{GM}{r^2}$};
 \end{scope}
 
 \begin{scope}[shift={(\HSPACE,-\VSPACE)}]
@@ -129,7 +129,6 @@ The below graphs show the four different field values.
 \end{document}
 ```
 
-
 ###### Uniform gravitational fields
 A **uniform gravitational field** is a region where the gravitational force is constant in both magnitude and direction at all points. This can be used to approximate a gravitational field near the surface of a large body e.g. Earth, where the field is almost constant over small distances.
 
@@ -140,6 +139,8 @@ For a uniform gravitational field $g$, the change in gravitational potential ene
 
 Gravitational potential energy does not change when moving along equipotential lines lines, because by $E = Fs$, **no work is done when the force is perpendicular to the displacement**, resulting in **no work being done whilst moving along equipotential lines**.
 
+
+**Footnotes**
 
 [^1]: **Footnote on signs of forces and potential energies**
 	Typically, it makes more sense to define the sign of a potential energy (for gravity potential energy is 0 at $\infty$ and thus sign is negative), then find the sign of the force using $F = -\frac{\text{d}U}{\text{d}x}$ if the potential energy $U$ is some function of position $x$ (work must be done against the force in the field, so there is a negative sign).
